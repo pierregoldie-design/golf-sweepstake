@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golf Sweepstake 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green-deep: #0f2318;
+  --green-mid: #1e4030;
+  --green-bright: #3a7a50;
+  --green-light: #6bbf7a;
+  --gold: #c9a84c;
+  --gold-light: #e8c96e;
+  --cream: #f5f0e8;
+  --white: #fafaf8;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background: var(--green-deep);
+  color: var(--cream);
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  background-image:
+    radial-gradient(ellipse at 15% 40%, rgba(58,122,80,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 15%, rgba(201,168,76,0.08) 0%, transparent 50%);
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 52px 20px 36px;
+  border-bottom: 1px solid rgba(201,168,76,0.25);
+  position: relative;
+}
+.header-emblem {
+  font-size: 2rem;
+  margin-bottom: 14px;
+  opacity: 0.6;
+  letter-spacing: 12px;
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5.5vw, 4rem);
+  font-weight: 900;
+  color: var(--cream);
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+header h1 em { color: var(--gold); font-style: normal; }
+.header-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--green-light);
+  margin-top: 10px;
+  opacity: 0.75;
+}
+.updated-pill {
+  display: inline-block;
+  margin-top: 14px;
+  background: rgba(201,168,76,0.1);
+  border: 1px solid rgba(201,168,76,0.3);
+  color: var(--gold-light);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  padding: 5px 14px;
+  border-radius: 100px;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 22px 20px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+nav button {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(245,240,232,0.5);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+nav button:hover, nav button.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--green-deep);
+  font-weight: 600;
+}
+
+/* MAIN */
+main { max-width: 1060px; margin: 0 auto; padding: 36px 20px 80px; }
+.section { display: none; }
+.section.active { display: block; }
+
+/* LOADING */
+.loading {
+  text-align: center;
+  padding: 80px 20px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: rgba(245,240,232,0.35);
+  text-transform: uppercase;
+}
+.loading::after {
+  content: '';
+  animation: dots 1.2s steps(3, end) infinite;
+}
+@keyframes dots {
+  0%   { content: ''; }
+  33%  { content: '.'; }
+  66%  { content: '..'; }
+  100% { content: '...'; }
+}
+
+/* SECTION HEADER */
+.sec-head { margin-bottom: 28px; }
+.sec-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--cream);
+}
+.sec-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  color: var(--green-light);
+  text-transform: uppercase;
+  margin-top: 4px;
+  opacity: 0.7;
+}
+
+/* TOURNAMENT PILLS */
+.tournament-row {
+  display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px;
+}
+.t-pill {
+  display: flex; align-items: center; gap: 7px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.78rem;
+  color: rgba(245,240,232,0.5);
+}
+.t-pill.live {
+  background: rgba(107,191,122,0.12);
+  border-color: rgba(107,191,122,0.35);
+  color: var(--green-light);
+}
+.t-dot { width:7px; height:7px; border-radius:50%; background:currentColor; }
+.t-pill.live .t-dot { animation: pulse 1.5s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+/* LEADERBOARD TABLE */
+.lb-table { width:100%; border-collapse:collapse; font-size:0.84rem; }
+.lb-table thead tr { border-bottom: 1px solid rgba(201,168,76,0.35); }
+.lb-table th {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  padding: 9px 12px;
+  text-align: left;
+  font-weight: 400;
+}
+.lb-table th.center { text-align: center; }
+.lb-table tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.045);
+  transition: background 0.14s;
+}
+.lb-table tbody tr:hover { background: rgba(255,255,255,0.035); }
+.lb-table td { padding: 11px 12px; vertical-align: middle; }
+.lb-table td.center {
+  text-align: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.78rem;
+  color: rgba(245,240,232,0.35);
+}
+
+.rank-wrap { display:flex; align-items:center; }
+.medal {
+  display:inline-flex; align-items:center; justify-content:center;
+  width:24px; height:24px; border-radius:50%;
+  font-family:'DM Mono',monospace; font-size:0.68rem; font-weight:600;
+}
+.medal-1 { background:var(--gold); color:var(--green-deep); }
+.medal-2 { background:rgba(200,200,200,0.25); color:#ccc; border:1px solid rgba(200,200,200,0.4); }
+.medal-3 { background:rgba(180,120,70,0.25); color:#c8845a; border:1px solid rgba(180,120,70,0.4); }
+.medal-n { color:rgba(245,240,232,0.25); font-family:'DM Mono',monospace; font-size:0.72rem; padding-left:4px; }
+
+.name-cell { font-weight:500; color:var(--cream); }
+.score-val { color: var(--green-light) !important; font-weight:500; }
+.score-total { color: var(--gold-light) !important; font-weight:700; font-size:0.9rem !important; }
+.dash { color: rgba(245,240,232,0.18) !important; }
+
+/* TIERS GRID */
+.tiers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+  gap: 14px;
+}
+.tier-card {
+  background: rgba(255,255,255,0.035);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  padding: 18px 14px;
+  transition: border-color 0.18s;
+}
+.tier-card:hover { border-color: rgba(201,168,76,0.25); }
+.tier-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.t1 { color: #e8c96e; }
+.t2 { color: #c0c0c0; }
+.t3 { color: #cd9052; }
+.t4 { color: var(--green-light); }
+.t5 { color: #7ec4d0; }
+.t6 { color: #b47ed0; }
+.golfer-name {
+  font-size: 0.76rem;
+  color: rgba(245,240,232,0.62);
+  padding: 3px 0;
+  line-height: 1.45;
+  border-bottom: 1px solid rgba(255,255,255,0.035);
+}
+.golfer-name:last-child { border-bottom: none; }
+.golfer-name.top-g { color: var(--cream); font-weight:500; }
+
+/* PARTICIPANTS */
+.participants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px,1fr));
+  gap: 10px;
+}
+.p-card {
+  background: rgba(255,255,255,0.035);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: flex; align-items: center; gap: 11px;
+  transition: background 0.14s;
+}
+.p-card:hover { background: rgba(255,255,255,0.06); }
+.p-avatar {
+  width:34px; height:34px; border-radius:50%;
+  background: var(--green-mid);
+  border: 1px solid rgba(201,168,76,0.2);
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Playfair Display',serif;
+  font-size:0.88rem; color:var(--gold);
+  flex-shrink:0;
+}
+.p-name { font-size:0.8rem; color:var(--cream); font-weight:500; }
+
+/* FOOTER */
+footer {
+  text-align:center;
+  padding: 30px 20px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  font-family:'DM Mono',monospace;
+  font-size:0.62rem;
+  letter-spacing:2px;
+  color:rgba(245,240,232,0.2);
+  text-transform:uppercase;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-emblem">⛳ ⛳ ⛳</div>
+  <h1>Golf Sweepstake <em>2026</em></h1>
+  <p class="header-sub">Annual Major Championship</p>
+  <div class="updated-pill" id="updatedPill">Loading...</div>
+</header>
+
+<nav>
+  <button class="active" onclick="showSection('leaderboard',this)">Leaderboard</button>
+  <button onclick="showSection('tournament',this)">Tournament</button>
+  <button onclick="showSection('tiers',this)">Tier List</button>
+  <button onclick="showSection('players',this)">Players</button>
+</nav>
+
+<main>
+
+  <!-- LEADERBOARD -->
+  <div id="leaderboard" class="section active">
+    <div class="sec-head">
+      <div class="sec-title">Annual Standings</div>
+      <div class="sec-sub">Cumulative points across all majors</div>
+    </div>
+    <div class="tournament-row" id="tournamentPills"></div>
+    <div id="leaderboardContent"><div class="loading">Loading standings</div></div>
+  </div>
+
+  <!-- TOURNAMENT -->
+  <div id="tournament" class="section">
+    <div class="sec-head">
+      <div class="sec-title" id="tournamentTitle">Current Tournament</div>
+      <div class="sec-sub" id="tournamentSub">Live scores</div>
+    </div>
+    <div id="tournamentContent"><div class="loading">Loading scores</div></div>
+  </div>
+
+  <!-- TIERS -->
+  <div id="tiers" class="section">
+    <div class="sec-head">
+      <div class="sec-title">Tier List</div>
+      <div class="sec-sub">Golfers ranked by tier for the sweepstake</div>
+    </div>
+    <div id="tiersContent"><div class="loading">Loading tiers</div></div>
+  </div>
+
+  <!-- PLAYERS -->
+  <div id="players" class="section">
+    <div class="sec-head">
+      <div class="sec-title">All Participants</div>
+      <div class="sec-sub" id="playerCount">Loading...</div>
+    </div>
+    <div id="playersContent"><div class="loading">Loading participants</div></div>
+  </div>
+
+</main>
+
+<footer>Golf Sweepstake 2026 &nbsp;·&nbsp; Data updates automatically</footer>
+
+<script>
+const DATA_URL = 'https://raw.githubusercontent.com/pierregoldie-design/golf-sweepstake/main/scores.json';
+const HISTORY_URL = 'https://raw.githubusercontent.com/pierregoldie-design/golf-sweepstake/main/sweepstake_history.json';
+
+const TOURNAMENTS = ['The Players','Masters','PGA Champ.','US Open','The Open'];
+const TIER_COLORS = ['t1','t2','t3','t4','t5','t6'];
+
+let scoresData = null;
+let historyData = null;
+
+function showSection(id, btn) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+
+function fmt(val) {
+  if (val === null || val === undefined || val === '' || val === '—' || val === '-') return '<span class="dash">—</span>';
+  if (typeof val === 'number' && val !== 0) return `<span class="score-val">${val}</span>`;
+  if (val === 0) return '<span class="dash">0</span>';
+  return val;
+}
+
+function rankMedal(rank) {
+  if (rank === 1) return `<span class="medal medal-1">1</span>`;
+  if (rank === 2) return `<span class="medal medal-2">2</span>`;
+  if (rank === 3) return `<span class="medal medal-3">3</span>`;
+  return `<span class="medal-n">${rank}</span>`;
+}
+
+function initials(name) {
+  return name.split(' ').map(p=>p[0]).join('').substring(0,2).toUpperCase();
+}
+
+async function loadData() {
+  try {
+    const [s, h] = await Promise.all([
+      fetch(DATA_URL + '?t=' + Date.now()).then(r => r.json()),
+      fetch(HISTORY_URL + '?t=' + Date.now()).then(r => r.json()).catch(() => null)
+    ]);
+    scoresData = s;
+    historyData = h;
+    renderAll();
+  } catch(e) {
+    document.getElementById('leaderboardContent').innerHTML = '<div class="loading">Could not load data — please try again later</div>';
+  }
+}
+
+function renderAll() {
+  if (!scoresData) return;
+
+  // Updated pill
+  const d = new Date(scoresData.updated);
+  document.getElementById('updatedPill').textContent = 'Updated ' + d.toLocaleString('en-GB', {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
+
+  // Tournament pills
+  const currentT = (scoresData.current_tournament || '').toLowerCase();
+  const tMap = { 'the players':'The Players', 'masters':'Masters', 'pga championship':'PGA Champ.', 'us open':'US Open', 'the open':'The Open' };
+  const pills = TOURNAMENTS.map(t => {
+    const isLive = Object.keys(tMap).some(k => tMap[k] === t && currentT.includes(k.split(' ')[0].toLowerCase()));
+    return `<div class="t-pill${isLive?' live':''}"><div class="t-dot"></div>${t}${isLive?' <b style="font-size:0.62rem;margin-left:4px;font-family:\'DM Mono\',monospace;letter-spacing:2px">LIVE</b>':''}</div>`;
+  }).join('');
+  document.getElementById('tournamentPills').innerHTML = pills;
+
+  renderLeaderboard();
+  renderTournament();
+  renderTiers();
+  renderPlayers();
+}
+
+function renderLeaderboard() {
+  const results = scoresData.current_results || [];
+  // Sort by total desc
+  const sorted = [...results].sort((a,b) => (b.total||0) - (a.total||0));
+
+  let html = `<table class="lb-table">
+    <thead><tr>
+      <th style="width:44px">#</th>
+      <th>Participant</th>
+      <th class="center">The Players</th>
+      <th class="center">Masters</th>
+      <th class="center">PGA</th>
+      <th class="center">US Open</th>
+      <th class="center">The Open</th>
+      <th class="center">Total</th>
+    </tr></thead><tbody>`;
+
+  sorted.forEach((p, i) => {
+    const rank = i + 1;
+    const total = p.total || 0;
+    html += `<tr>
+      <td><div class="rank-wrap">${rankMedal(rank)}</div></td>
+      <td class="name-cell">${p.participant}</td>
+      <td class="center">${fmt(total)}</td>
+      <td class="center"><span class="dash">—</span></td>
+      <td class="center"><span class="dash">—</span></td>
+      <td class="center"><span class="dash">—</span></td>
+      <td class="center"><span class="dash">—</span></td>
+      <td class="center"><span class="score-total">${total}</span></td>
+    </tr>`;
+  });
+
+  html += '</tbody></table>';
+  document.getElementById('leaderboardContent').innerHTML = html;
+}
+
+function renderTournament() {
+  const currentT = scoresData.current_tournament || 'Current Tournament';
+  document.getElementById('tournamentTitle').textContent = currentT.replace(/\b\w/g, c => c.toUpperCase());
+  document.getElementById('tournamentSub').textContent = 'Live scores — ' + new Date(scoresData.updated).toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'});
+
+  const results = [...(scoresData.current_results||[])].sort((a,b) => (b.total||0) - (a.total||0));
+
+  let html = `<table class="lb-table">
+    <thead><tr>
+      <th style="width:44px">#</th>
+      <th>Participant</th>
+      <th class="center">T1</th>
+      <th class="center">T2</th>
+      <th class="center">T3</th>
+      <th class="center">T4</th>
+      <th class="center">T5</th>
+      <th class="center">T6</th>
+      <th class="center">Total</th>
+    </tr></thead><tbody>`;
+
+  results.forEach((p, i) => {
+    const ts = p.tier_scores || {};
+    const tiers = ['Tier 1','Tier 2','Tier 3','Tier 4','Tier 5','Tier 6'];
+    const cells = tiers.map(t => {
+      const tier = ts[t] || {};
+      const golfer = tier.golfer || '';
+      const score = tier.score;
+      const status = tier.status || '';
+      if (status === 'no_pick' || !golfer) return `<td class="center"><span class="dash">—</span></td>`;
+      const display = (score !== undefined && score !== 0) ? score : '0';
+      return `<td class="center" title="${golfer}">${score ? `<span class="score-val">${score}</span>` : '<span class="dash">0</span>'}</td>`;
+    }).join('');
+
+    html += `<tr>
+      <td><div class="rank-wrap">${rankMedal(i+1)}</div></td>
+      <td class="name-cell">${p.participant}</td>
+      ${cells}
+      <td class="center"><span class="score-total">${p.total||0}</span></td>
+    </tr>`;
+  });
+
+  html += '</tbody></table>';
+  document.getElementById('tournamentContent').innerHTML = html;
+}
+
+function renderTiers() {
+  // Build tier list from results data
+  const tiers = { 'Tier 1':[], 'Tier 2':[], 'Tier 3':[], 'Tier 4':[], 'Tier 5':[], 'Tier 6':[] };
+
+  // Collect golfers from picks
+  (scoresData.current_results || []).forEach(p => {
+    const ts = p.tier_scores || {};
+    Object.keys(tiers).forEach(t => {
+      const g = (ts[t] || {}).golfer;
+      if (g && !tiers[t].includes(g)) tiers[t].push(g);
+    });
+  });
+
+  const tierColors = ['t1','t2','t3','t4','t5','t6'];
+  const tierKeys = Object.keys(tiers);
+
+  // If no picks yet, show message
+  const hasPicks = tierKeys.some(t => tiers[t].length > 0);
+  if (!hasPicks) {
+    document.getElementById('tiersContent').innerHTML = `
+      <div style="background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);border-radius:8px;padding:20px 24px;color:rgba(245,240,232,0.55);font-size:0.84rem;">
+        ⛳ &nbsp; Picks haven't been submitted yet for this tournament. Check back soon!
+      </div>`;
+    return;
+  }
+
+  let html = '<div class="tiers-grid">';
+  tierKeys.forEach((t, i) => {
+    html += `<div class="tier-card">
+      <div class="tier-badge ${tierColors[i]}">${t}</div>`;
+    tiers[t].forEach((g, gi) => {
+      html += `<div class="golfer-name${gi < 2 ? ' top-g' : ''}">${g}</div>`;
+    });
+    html += '</div>';
+  });
+  html += '</div>';
+  document.getElementById('tiersContent').innerHTML = html;
+}
+
+function renderPlayers() {
+  const results = scoresData.current_results || [];
+  document.getElementById('playerCount').textContent = results.length + ' participants · 2026 Season';
+
+  let html = '<div class="participants-grid">';
+  results.forEach(p => {
+    html += `<div class="p-card">
+      <div class="p-avatar">${initials(p.participant)}</div>
+      <div class="p-name">${p.participant}</div>
+    </div>`;
+  });
+  html += '</div>';
+  document.getElementById('playersContent').innerHTML = html;
+}
+
+// Load data on page start
+loadData();
+// Refresh every 5 minutes
+setInterval(loadData, 5 * 60 * 1000);
+</script>
+</body>
+</html>
