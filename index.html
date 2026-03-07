@@ -420,7 +420,7 @@ function renderAll() {
 function renderLeaderboard() {
   const results = scoresData.current_results || [];
   // Sort by total desc
-  const sorted = [...results].sort((a,b) => (b.total||0) - (a.total||0));
+  const sorted = [...results].sort((a,b) => (a.total||0) - (b.total||0));
 
   let html = `<table class="lb-table">
     <thead><tr>
@@ -458,7 +458,7 @@ function renderTournament() {
   document.getElementById('tournamentTitle').textContent = currentT.replace(/\b\w/g, c => c.toUpperCase());
   document.getElementById('tournamentSub').textContent = 'Live scores — ' + new Date(scoresData.updated).toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'});
 
-  const results = [...(scoresData.current_results||[])].sort((a,b) => (b.total||0) - (a.total||0));
+  const results = [...(scoresData.current_results||[])].sort((a,b) => (a.total||0) - (b.total||0));
 
   let html = `<table class="lb-table">
     <thead><tr>
