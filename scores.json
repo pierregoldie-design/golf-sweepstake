@@ -1,0 +1,2218 @@
+{
+  "updated": "2026-03-07T11:11:28.611618",
+  "current_tournament": "the players",
+  "current_results": [
+    {
+      "rank": 1,
+      "participant": "Helgardt Muller",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Stephanus Raubenheimer",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Anthony Archer",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Reagan Abrahams",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Breyten Meyer",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Gerard Beyers",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Zander Bronn",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Clay Crosby",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Andre De Sylva",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Andrew Dixon",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "David Cromblin",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Ruan Erasmus",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Ryan Echausse",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Pierre Goldie",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Ashley Hertz",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Henno Badenhorst",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Philip Hearle",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Neil McMaster",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "David Kleiterp",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Andrew Light",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "James McMaster",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Graeme Peace",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Russel Raubenheimer",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Stephanus Raubenheimer",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Stephen Raubenheimer",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "George Self",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Morne Smit",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Tom Smith",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Adriaan Boswell",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Dean Van Vuren",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Ivan Van Vuren",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Kash Vazirani",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Quintin Van Jaarsveldt",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Chris Wicks",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Werner Loubser",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Reynard Van der Nest",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Henry Coomans",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Jason Brown",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Keegan Foss",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Gerard MacLachlan",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Roan Roode",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Leon Visser",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Romano De Nobrega",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Ivam Leonard",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Clinton Marais",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "participant": "Graig Glover",
+      "total": 0,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "",
+          "score": 0,
+          "status": "no_pick",
+          "position": ""
+        }
+      }
+    }
+  ],
+  "history": {
+    "the players": [
+      {
+        "participant": "Helgardt Muller",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Stephanus Raubenheimer",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Anthony Archer",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Reagan Abrahams",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Breyten Meyer",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Gerard Beyers",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Zander Bronn",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Clay Crosby",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Andre De Sylva",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Andrew Dixon",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "David Cromblin",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Ruan Erasmus",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Ryan Echausse",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Pierre Goldie",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Ashley Hertz",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Henno Badenhorst",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Philip Hearle",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Neil McMaster",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "David Kleiterp",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Andrew Light",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "James McMaster",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Graeme Peace",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Russel Raubenheimer",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Stephanus Raubenheimer",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Stephen Raubenheimer",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "George Self",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Morne Smit",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Tom Smith",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Adriaan Boswell",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Dean Van Vuren",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Ivan Van Vuren",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Kash Vazirani",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Quintin Van Jaarsveldt",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Chris Wicks",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Werner Loubser",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Reynard Van der Nest",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Henry Coomans",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Jason Brown",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Keegan Foss",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Gerard MacLachlan",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Roan Roode",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Leon Visser",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Romano De Nobrega",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Ivam Leonard",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Clinton Marais",
+        "total": 0,
+        "rank": 1
+      },
+      {
+        "participant": "Graig Glover",
+        "total": 0,
+        "rank": 1
+      }
+    ]
+  }
+}

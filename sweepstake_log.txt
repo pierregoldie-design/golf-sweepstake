@@ -1,0 +1,16 @@
+[2026-03-06 17:10:51] [INFO] === Sweepstake refresh started ===
+[2026-03-06 17:10:52] [INFO] Tournament: The Players
+[2026-03-06 17:10:52] [INFO] Fetched 72 golfers for the players
+[2026-03-06 17:10:52] [INFO] Read 46 participants
+[2026-03-06 17:10:52] [INFO] History saved
+[2026-03-06 17:10:52] [INFO] scores.json written to /Users/pierregoldie/Downloads/scores.json
+[2026-03-06 17:10:53] [INFO] Saved: /Users/pierregoldie/Downloads/Sweepstake  - 2026 (1).xlsx
+[2026-03-06 17:10:53] [INFO] === Done ===
+[2026-03-07 11:11:27] [INFO] === Sweepstake refresh started ===
+[2026-03-07 11:11:27] [INFO] Tournament: The Players
+[2026-03-07 11:11:28] [INFO] Fetched 72 golfers for the players
+[2026-03-07 11:11:28] [INFO] Read 46 participants
+[2026-03-07 11:11:28] [INFO] History saved
+[2026-03-07 11:11:28] [INFO] scores.json written to /Users/pierregoldie/Downloads/scores.json
+[2026-03-07 11:11:28] [INFO] Saved: /Users/pierregoldie/Downloads/Sweepstake  - 2026 (1).xlsx
+[2026-03-07 11:11:28] [INFO] === Done ===
