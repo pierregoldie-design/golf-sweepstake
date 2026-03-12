@@ -656,7 +656,7 @@ async function loadLiveScores() {
   try {
     const r = await fetch(ESPN_URL + '?event=' + eventId + '&lang=en&region=us&t=' + Date.now());
     liveData = await r.json();
-    const panel = document.getElementById('section-tournament');
+    const panel = document.getElementById('tournament');
     if (panel && panel.style.display !== 'none') renderTournament();
   } catch(e) { console.log('ESPN error:', e); }
 }
