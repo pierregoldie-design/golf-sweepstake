@@ -644,10 +644,30 @@ function renderPlayers() {
   document.getElementById('playersContent').innerHTML = html;
 }
 
+
+const ESPN_URL = 'https://site.web.api.espn.com/apis/site/v2/sports/golf/pga/scoreboard';
+const EVENT_IDS = {'The Players':'401811937','Masters':'401811941','PGA Championship':'401811947','US Open':'401811952','The Open':'401811957'};
+let liveData = null;
+
+async function loadLiveScores() {
+  if (!scoresData) return;
+  const eventId = EVENT_IDS[scoresData.current_tournament];
+  if (!eventId) return;
+  try {
+    const r = await fetch(ESPN_URL + '?event=' + eventId + '&lang=en&region=us&t=' + Date.now());
+    liveData = await r.json();
+    const panel = document.getElementById('section-tournament');
+    if (panel && panel.style.display !== 'none') renderTournament();
+  } catch(e) { console.log('ESPN error:', e); }
+}
+
 // Load data on page start
 loadData();
-// Refresh every 5 minutes
+loadLiveScores();
+// Refresh every 5 minutes / 2 minutes
 setInterval(loadData, 5 * 60 * 1000);
+setInterval(loadLiveScores, 2 * 60 * 1000);
+
 </script>
 </body>
 </html>
