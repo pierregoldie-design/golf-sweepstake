@@ -454,49 +454,141 @@ function renderLeaderboard() {
 }
 
 function renderTournament() {
-  const currentT = scoresData.current_tournament || 'Current Tournament';
-  document.getElementById('tournamentTitle').textContent = currentT.replace(/\b\w/g, c => c.toUpperCase());
-  document.getElementById('tournamentSub').textContent = 'Live scores — ' + new Date(scoresData.updated).toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'});
+  const tournament = scoresData?.current_tournament || 'Current Tournament';
+  const sub = document.getElementById('tournamentSub');
+  if (sub) sub.textContent = 'Live scores — ' + new Date(scoresData.updated).toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'});
 
-  const results = [...(scoresData.current_results||[])].sort((a,b) => (a.total||0) - (b.total||0));
-
-  let html = `<table class="lb-table">
-    <thead><tr>
-      <th style="width:44px">#</th>
-      <th>Participant</th>
-      <th class="center">T1</th>
-      <th class="center">T2</th>
-      <th class="center">T3</th>
-      <th class="center">T4</th>
-      <th class="center">T5</th>
-      <th class="center">T6</th>
-      <th class="center">Total</th>
-    </tr></thead><tbody>`;
-
-  results.forEach((p, i) => {
-    const ts = p.tier_scores || {};
-    const tiers = ['Tier 1','Tier 2','Tier 3','Tier 4','Tier 5','Tier 6'];
-    const cells = tiers.map(t => {
-      const tier = ts[t] || {};
-      const golfer = tier.golfer || '';
-      const score = tier.score;
-      const status = tier.status || '';
-      if (status === 'no_pick' || !golfer) return `<td class="center"><span class="dash">—</span></td>`;
-      const display = (score !== undefined && score !== 0) ? score : '0';
-      return `<td class="center" title="${golfer}">${score ? `<span class="score-val">${score}</span>` : '<span class="dash">0</span>'}</td>`;
-    }).join('');
-
-    html += `<tr>
-      <td><div class="rank-wrap">${rankMedal(i+1)}</div></td>
-      <td class="name-cell">${p.participant}</td>
-      ${cells}
-      <td class="center"><span class="score-total">${p.total||0}</span></td>
-    </tr>`;
+  // Build golfer->pickers lookup
+  const golferPickers = {};
+  (scoresData.current_results || []).forEach(p => {
+    Object.values(p.tier_scores || {}).forEach(t => {
+      const g = (t.golfer || '').trim();
+      if (g) {
+        if (!golferPickers[g]) golferPickers[g] = [];
+        golferPickers[g].push(p.participant.split(' ')[0]);
+      }
+    });
   });
 
-  html += '</tbody></table>';
-  document.getElementById('tournamentContent').innerHTML = html;
+  if (!liveData) {
+    const liveEl = document.getElementById('tournamentContent');
+    if (liveEl) liveEl.innerHTML = `
+      <div style="text-align:center;padding:48px;color:var(--text-dim)">
+        <div style="font-size:32px;margin-bottom:12px">⛳</div>
+        <div style="font-size:14px">Live scores will appear here once the tournament begins.</div>
+        <div style="font-size:12px;margin-top:8px;color:rgba(138,158,142,0.5)">Checking ESPN every 2 minutes...</div>
+      </div>`;
+    loadLiveScores();
+    return;
+  }
+
+  // Parse ESPN competitors
+  let golfers = [];
+  try {
+    const competitors = liveData?.events?.[0]?.competitions?.[0]?.competitors || [];
+    competitors.forEach(c => {
+      const name = c.athlete?.displayName || '';
+      const rawScore = c.score || 'E';
+      let score = 0;
+      if (rawScore !== 'E' && rawScore !== 'Even') score = parseInt(rawScore) || 0;
+      const thru = c.stats?.find(s => s.name === 'thru')?.displayValue
+                || c.status?.type?.shortDetail || '—';
+      golfers.push({ name, score, thru });
+    });
+    golfers.sort((a,b) => a.score - b.score);
+  } catch(e) { console.log('ESPN parse error:', e); }
+
+  // Fuzzy picker lookup
+  function getPickers(name) {
+    if (golferPickers[name]) return golferPickers[name];
+    const last = name.split(' ').slice(-1)[0];
+    const match = Object.keys(golferPickers).find(k => k.includes(last));
+    return match ? golferPickers[match] : [];
+  }
+
+  // Score formatting
+  function fmtLive(s) {
+    if (s < 0) return `<span style="color:#5dd47a;font-weight:700">${s}</span>`;
+    if (s > 0) return `<span style="color:#e05050;font-weight:700">+${s}</span>`;
+    return `<span style="color:var(--text-dim);font-weight:700">E</span>`;
+  }
+
+  // Build live leaderboard table
+  let liveRows = golfers.map((g, i) => {
+    const pickers = getPickers(g.name);
+    return `<tr style="border-bottom:1px solid rgba(255,255,255,0.04)">
+      <td style="padding:9px 10px;color:var(--text-dim);font-size:12px;width:32px">${i+1}</td>
+      <td style="padding:9px 10px;font-weight:500;color:var(--cream)">${g.name}</td>
+      <td style="padding:9px 10px;text-align:right">${fmtLive(g.score)}</td>
+      <td style="padding:9px 10px;text-align:right;font-size:11px;color:var(--text-dim)">${g.thru}</td>
+      <td style="padding:9px 10px;font-size:11px;color:var(--text-dim)">${pickers.length ? '<span style="color:var(--text)">'+pickers.join(', ')+'</span>' : '—'}</td>
+    </tr>`;
+  }).join('');
+
+  // Calculate projected scores
+  const liveScores = {};
+  golfers.forEach(g => { liveScores[g.name] = g.score; });
+
+  function getGolferScore(golferName) {
+    const g = golferName?.trim();
+    if (!g) return 0;
+    if (liveScores[g] !== undefined) return liveScores[g];
+    const last = g.split(' ').slice(-1)[0];
+    const match = Object.keys(liveScores).find(k => k.includes(last));
+    return match ? liveScores[match] : 0;
+  }
+
+  const projected = (scoresData.current_results || []).map(p => {
+    const total = Object.values(p.tier_scores || {}).reduce((sum, t) => sum + getGolferScore(t.golfer), 0);
+    return { participant: p.participant, score: total };
+  }).sort((a,b) => a.score - b.score);
+
+  let projRows = projected.map((p, i) => `
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.04)">
+      <td style="padding:9px 10px;width:36px">${rankMedal(i+1)}</td>
+      <td style="padding:9px 10px;font-weight:500;color:var(--cream)">${p.participant}</td>
+      <td style="padding:9px 10px;text-align:right">${fmtLive(p.score)}</td>
+    </tr>`).join('');
+
+  const content = document.getElementById('tournamentContent');
+  if (content) content.innerHTML = `
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+      <div style="background:var(--green-mid);border:1px solid rgba(255,255,255,0.07);border-radius:10px;overflow:hidden">
+        <div style="padding:12px 16px;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:space-between">
+          <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600">Live Golfer Leaderboard</span>
+          <span style="font-size:9px;background:#e05050;color:#fff;padding:2px 7px;border-radius:3px;font-weight:600;letter-spacing:1px">LIVE</span>
+        </div>
+        <div style="overflow-x:auto">
+          <table style="width:100%;border-collapse:collapse">
+            <thead><tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);text-align:left">Pos</th>
+              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);text-align:left">Golfer</th>
+              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);text-align:right">Score</th>
+              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);text-align:right">Thru</th>
+              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim)">Picked by</th>
+            </tr></thead>
+            <tbody>${liveRows}</tbody>
+          </table>
+        </div>
+      </div>
+      <div style="background:var(--green-mid);border:1px solid rgba(255,255,255,0.07);border-radius:10px;overflow:hidden">
+        <div style="padding:12px 16px;border-bottom:1px solid rgba(255,255,255,0.06)">
+          <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600">Projected Standings</span>
+        </div>
+        <div style="overflow-x:auto">
+          <table style="width:100%;border-collapse:collapse">
+            <thead><tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);text-align:left">Pos</th>
+              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);text-align:left">Participant</th>
+              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);text-align:right">Score</th>
+            </tr></thead>
+            <tbody>${projRows}</tbody>
+          </table>
+        </div>
+      </div>
+    </div>`;
 }
+
 
 function renderTiers() {
   // Build tier list from results data
