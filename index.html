@@ -1,386 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- cache-bust: 2026-03-13T12:57:16.585669 -->
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Golf Sweepstake 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<title>Golf Sweepstake 2027</title>
 <style>
-:root {
-  --green-deep: #0f2318;
-  --green-mid: #1e4030;
-  --green-bright: #3a7a50;
-  --green-light: #6bbf7a;
-  --gold: #c9a84c;
-  --gold-light: #e8c96e;
-  --cream: #f5f0e8;
-  --white: #fafaf8;
-}
-* { margin:0; padding:0; box-sizing:border-box; }
-body {
-  background: var(--green-deep);
-  color: var(--cream);
-  font-family: 'DM Sans', sans-serif;
-  min-height: 100vh;
-  background-image:
-    radial-gradient(ellipse at 15% 40%, rgba(58,122,80,0.18) 0%, transparent 55%),
-    radial-gradient(ellipse at 85% 15%, rgba(201,168,76,0.08) 0%, transparent 50%);
-}
+  :root {
+    --green-dark: #1a2e1a;
+    --green-mid: #1f3520;
+    --green-light: #2a4a2a;
+    --gold: #c9a84c;
+    --cream: #f5f0e8;
+    --text: rgba(245,240,232,0.85);
+    --text-dim: rgba(245,240,232,0.45);
+    --red: #e05050;
+    --green-score: #5dd47a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--green-dark); color: var(--text); font-family: 'Georgia', serif; min-height: 100vh; }
+  
+  /* HEADER */
+  .header { text-align: center; padding: 40px 20px 20px; }
+  .header h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; color: var(--cream); letter-spacing: -1px; }
+  .header h1 span { color: var(--gold); }
+  .header .subtitle { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--text-dim); margin-top: 6px; }
+  .updated-badge { display: inline-block; margin-top: 10px; font-size: 11px; letter-spacing: 1px; color: var(--text-dim); background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.2); border-radius: 20px; padding: 4px 14px; }
 
-/* HEADER */
-header {
-  text-align: center;
-  padding: 52px 20px 36px;
-  border-bottom: 1px solid rgba(201,168,76,0.25);
-  position: relative;
-}
-.header-emblem {
-  font-size: 2rem;
-  margin-bottom: 14px;
-  opacity: 0.6;
-  letter-spacing: 12px;
-}
-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 5.5vw, 4rem);
-  font-weight: 900;
-  color: var(--cream);
-  line-height: 1.1;
-  letter-spacing: -0.5px;
-}
-header h1 em { color: var(--gold); font-style: normal; }
-.header-sub {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.68rem;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--green-light);
-  margin-top: 10px;
-  opacity: 0.75;
-}
-.updated-pill {
-  display: inline-block;
-  margin-top: 14px;
-  background: rgba(201,168,76,0.1);
-  border: 1px solid rgba(201,168,76,0.3);
-  color: var(--gold-light);
-  font-family: 'DM Mono', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 2px;
-  padding: 5px 14px;
-  border-radius: 100px;
-}
+  /* TABS */
+  .tabs { display: flex; justify-content: center; gap: 8px; padding: 20px; flex-wrap: wrap; }
+  .tab-btn { background: transparent; border: 1px solid rgba(255,255,255,0.15); color: var(--text-dim); padding: 8px 22px; border-radius: 4px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+  .tab-btn:hover { border-color: var(--gold); color: var(--gold); }
+  .tab-btn.active { background: var(--gold); border-color: var(--gold); color: var(--green-dark); font-weight: 700; }
 
-/* NAV */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-  padding: 22px 20px;
-  flex-wrap: wrap;
-  border-bottom: 1px solid rgba(255,255,255,0.07);
-}
-nav button {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.12);
-  color: rgba(245,240,232,0.5);
-  font-family: 'DM Mono', monospace;
-  font-size: 0.68rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding: 8px 18px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.18s;
-}
-nav button:hover, nav button.active {
-  background: var(--gold);
-  border-color: var(--gold);
-  color: var(--green-deep);
-  font-weight: 600;
-}
+  /* SECTIONS */
+  .section { display: none; max-width: 1200px; margin: 0 auto; padding: 20px; }
+  .section.active { display: block; }
+  .sec-title { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: 700; color: var(--cream); margin-bottom: 4px; }
+  .sec-sub { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 24px; }
 
-/* MAIN */
-main { max-width: 1060px; margin: 0 auto; padding: 36px 20px 80px; }
-.section { display: none; }
-.section.active { display: block; }
+  /* CARDS */
+  .card { background: var(--green-mid); border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; overflow: hidden; margin-bottom: 20px; }
+  .card-header { padding: 12px 16px; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: space-between; }
+  .card-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+  .live-badge { font-size: 9px; background: var(--red); color: #fff; padding: 2px 7px; border-radius: 3px; font-weight: 700; letter-spacing: 1px; }
 
-/* LOADING */
-.loading {
-  text-align: center;
-  padding: 80px 20px;
-  font-family: 'DM Mono', monospace;
-  font-size: 0.75rem;
-  letter-spacing: 3px;
-  color: rgba(245,240,232,0.35);
-  text-transform: uppercase;
-}
-.loading::after {
-  content: '';
-  animation: dots 1.2s steps(3, end) infinite;
-}
-@keyframes dots {
-  0%   { content: ''; }
-  33%  { content: '.'; }
-  66%  { content: '..'; }
-  100% { content: '...'; }
-}
+  /* TABLES */
+  table { width: 100%; border-collapse: collapse; }
+  th { padding: 8px 10px; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-dim); text-align: left; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  td { padding: 10px 10px; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13px; }
+  tr:last-child td { border-bottom: none; }
+  .score-under { color: var(--green-score); font-weight: 700; }
+  .score-over { color: var(--red); font-weight: 700; }
+  .score-even { color: var(--text-dim); font-weight: 700; }
+  .picked-by { font-size: 11px; color: var(--text-dim); }
 
-/* SECTION HEADER */
-.sec-head { margin-bottom: 28px; }
-.sec-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--cream);
-}
-.sec-sub {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 3px;
-  color: var(--green-light);
-  text-transform: uppercase;
-  margin-top: 4px;
-  opacity: 0.7;
-}
+  /* TOURNAMENT SPLIT */
+  .tournament-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 768px) { .tournament-grid { grid-template-columns: 1fr; } }
 
-/* TOURNAMENT PILLS */
-.tournament-row {
-  display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px;
-}
-.t-pill {
-  display: flex; align-items: center; gap: 7px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.09);
-  border-radius: 6px;
-  padding: 8px 14px;
-  font-size: 0.78rem;
-  color: rgba(245,240,232,0.5);
-}
-.t-pill.live {
-  background: rgba(107,191,122,0.12);
-  border-color: rgba(107,191,122,0.35);
-  color: var(--green-light);
-}
-.t-dot { width:7px; height:7px; border-radius:50%; background:currentColor; }
-.t-pill.live .t-dot { animation: pulse 1.5s ease-in-out infinite; }
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  /* LEADERBOARD */
+  .medal-1 { color: #ffd700; font-weight: 700; }
+  .medal-2 { color: #c0c0c0; font-weight: 700; }
+  .medal-3 { color: #cd7f32; font-weight: 700; }
 
-/* LEADERBOARD TABLE */
-.lb-table { width:100%; border-collapse:collapse; font-size:0.84rem; }
-.lb-table thead tr { border-bottom: 1px solid rgba(201,168,76,0.35); }
-.lb-table th {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.62rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--gold);
-  padding: 9px 12px;
-  text-align: left;
-  font-weight: 400;
-}
-.lb-table th.center { text-align: center; }
-.lb-table tbody tr {
-  border-bottom: 1px solid rgba(255,255,255,0.045);
-  transition: background 0.14s;
-}
-.lb-table tbody tr:hover { background: rgba(255,255,255,0.035); }
-.lb-table td { padding: 11px 12px; vertical-align: middle; }
-.lb-table td.center {
-  text-align: center;
-  font-family: 'DM Mono', monospace;
-  font-size: 0.78rem;
-  color: rgba(245,240,232,0.35);
-}
+  /* PLAYERS GRID */
+  .players-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+  .player-card { background: var(--green-mid); border: 1px solid rgba(255,255,255,0.07); border-radius: 8px; padding: 16px; display: flex; align-items: center; gap: 12px; }
+  .player-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--green-light); border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: var(--gold); flex-shrink: 0; }
+  .player-name { font-size: 13px; color: var(--cream); }
 
-.rank-wrap { display:flex; align-items:center; }
-.medal {
-  display:inline-flex; align-items:center; justify-content:center;
-  width:24px; height:24px; border-radius:50%;
-  font-family:'DM Mono',monospace; font-size:0.68rem; font-weight:600;
-}
-.medal-1 { background:var(--gold); color:var(--green-deep); }
-.medal-2 { background:rgba(200,200,200,0.25); color:#ccc; border:1px solid rgba(200,200,200,0.4); }
-.medal-3 { background:rgba(180,120,70,0.25); color:#c8845a; border:1px solid rgba(180,120,70,0.4); }
-.medal-n { color:rgba(245,240,232,0.25); font-family:'DM Mono',monospace; font-size:0.72rem; padding-left:4px; }
+  /* TIER GRID */
+  .tier-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+  .tier-card { background: var(--green-mid); border: 1px solid rgba(255,255,255,0.07); border-radius: 8px; padding: 14px; }
+  .tier-badge { display: inline-block; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; padding: 3px 10px; border-radius: 3px; margin-bottom: 10px; }
+  .t1 { background: rgba(255,215,0,0.15); color: #ffd700; }
+  .t2 { background: rgba(192,192,192,0.15); color: #c0c0c0; }
+  .t3 { background: rgba(205,127,50,0.15); color: #cd7f32; }
+  .t4 { background: rgba(100,180,255,0.15); color: #64b4ff; }
+  .t5 { background: rgba(180,100,255,0.15); color: #b464ff; }
+  .t6 { background: rgba(100,220,180,0.15); color: #64dcb4; }
+  .golfer-row { font-size: 12px; color: var(--text); padding: 3px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+  .golfer-row:last-child { border-bottom: none; }
 
-.name-cell { font-weight:500; color:var(--cream); }
-.score-val { color: var(--green-light) !important; font-weight:500; }
-.score-total { color: var(--gold-light) !important; font-weight:700; font-size:0.9rem !important; }
-.dash { color: rgba(245,240,232,0.18) !important; }
+  /* LOADING */
+  .loading { text-align: center; padding: 60px; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); }
 
-/* TIERS GRID */
-.tiers-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
-  gap: 14px;
-}
-.tier-card {
-  background: rgba(255,255,255,0.035);
-  border: 1px solid rgba(255,255,255,0.07);
-  border-radius: 10px;
-  padding: 18px 14px;
-  transition: border-color 0.18s;
-}
-.tier-card:hover { border-color: rgba(201,168,76,0.25); }
-.tier-badge {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.62rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  margin-bottom: 12px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-.t1 { color: #e8c96e; }
-.t2 { color: #c0c0c0; }
-.t3 { color: #cd9052; }
-.t4 { color: var(--green-light); }
-.t5 { color: #7ec4d0; }
-.t6 { color: #b47ed0; }
-.golfer-name {
-  font-size: 0.76rem;
-  color: rgba(245,240,232,0.62);
-  padding: 3px 0;
-  line-height: 1.45;
-  border-bottom: 1px solid rgba(255,255,255,0.035);
-}
-.golfer-name:last-child { border-bottom: none; }
-.golfer-name.top-g { color: var(--cream); font-weight:500; }
+  /* RESERVE TAG */
+  .reserve-tag { font-size: 9px; color: var(--gold); background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3); border-radius: 3px; padding: 1px 5px; margin-left: 5px; }
 
-/* PARTICIPANTS */
-.participants-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(190px,1fr));
-  gap: 10px;
-}
-.p-card {
-  background: rgba(255,255,255,0.035);
-  border: 1px solid rgba(255,255,255,0.07);
-  border-radius: 8px;
-  padding: 12px 14px;
-  display: flex; align-items: center; gap: 11px;
-  transition: background 0.14s;
-}
-.p-card:hover { background: rgba(255,255,255,0.06); }
-.p-avatar {
-  width:34px; height:34px; border-radius:50%;
-  background: var(--green-mid);
-  border: 1px solid rgba(201,168,76,0.2);
-  display:flex; align-items:center; justify-content:center;
-  font-family:'Playfair Display',serif;
-  font-size:0.88rem; color:var(--gold);
-  flex-shrink:0;
-}
-.p-name { font-size:0.8rem; color:var(--cream); font-weight:500; }
-
-/* FOOTER */
-footer {
-  text-align:center;
-  padding: 30px 20px;
-  border-top: 1px solid rgba(255,255,255,0.06);
-  font-family:'DM Mono',monospace;
-  font-size:0.62rem;
-  letter-spacing:2px;
-  color:rgba(245,240,232,0.2);
-  text-transform:uppercase;
-}
+  footer { text-align: center; padding: 40px 20px; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); }
 </style>
 </head>
 <body>
 
-<header>
-  <div class="header-emblem">⛳ ⛳ ⛳</div>
-  <h1>Golf Sweepstake <em>2026</em></h1>
-  <p class="header-sub">Annual Major Championship</p>
-  <div class="updated-pill" id="updatedPill">Loading...</div>
-</header>
+<div class="header">
+  <div style="font-size:24px;margin-bottom:8px">⛳ ⛳ ⛳</div>
+  <h1>Golf Sweepstake <span>2027</span></h1>
+  <div class="subtitle">Annual Major Championship</div>
+  <div class="updated-badge" id="updatedBadge">Loading...</div>
+</div>
 
-<nav>
-  <button class="active" onclick="showSection('tournament',this)">Tournament</button>
-  <button onclick="showSection('leaderboard',this)">Leaderboard</button>
-  <button onclick="showSection('tiers',this)">Tier List</button>
-  <button onclick="showSection('players',this)">Players</button>
-</nav>
+<div class="tabs">
+  <button class="tab-btn active" onclick="showTab('tournament',this)">Tournament</button>
+  <button class="tab-btn" onclick="showTab('leaderboard',this)">Leaderboard</button>
+  <button class="tab-btn" onclick="showTab('tiers',this)">Tier List</button>
+  <button class="tab-btn" onclick="showTab('players',this)">Players</button>
+</div>
 
-<main>
+<div id="tournament" class="section active">
+  <div class="sec-title" id="tournamentTitle">Current Tournament</div>
+  <div class="sec-sub" id="tournamentSub">Live scores</div>
+  <div class="loading" id="tournamentLoading">Loading live scores...</div>
+  <div class="tournament-grid" id="tournamentGrid" style="display:none"></div>
+</div>
 
-  <!-- LEADERBOARD -->
-  <div id="leaderboard" class="section active">
-    <div class="sec-head">
-      <div class="sec-title">Annual Standings</div>
-      <div class="sec-sub">Cumulative points across all majors</div>
-    </div>
-    <div class="tournament-row" id="tournamentPills"></div>
-    <div id="leaderboardContent"><div class="loading">Loading standings</div></div>
+<div id="leaderboard" class="section">
+  <div class="sec-title">Annual Standings</div>
+  <div class="sec-sub">Cumulative points across all majors</div>
+  <div class="card">
+    <div id="leaderboardContent"><div class="loading">Loading...</div></div>
   </div>
+</div>
 
-  <!-- TOURNAMENT -->
-  <div id="tournament" class="section">
-    <div class="sec-head">
-      <div class="sec-title" id="tournamentTitle">Current Tournament</div>
-      <div class="sec-sub" id="tournamentSub">Live scores</div>
-    </div>
-    <div id="tournamentContent"><div class="loading">Loading scores</div></div>
-  </div>
+<div id="tiers" class="section">
+  <div class="sec-title">Tier List</div>
+  <div class="sec-sub">Golfers by tier</div>
+  <div class="tier-grid" id="tiersContent"><div class="loading">Loading...</div></div>
+</div>
 
-  <!-- TIERS -->
-  <div id="tiers" class="section">
-    <div class="sec-head">
-      <div class="sec-title">Tier List</div>
-      <div class="sec-sub">Golfers ranked by tier for the sweepstake</div>
-    </div>
-    <div id="tiersContent"><div class="loading">Loading tiers</div></div>
-  </div>
+<div id="players" class="section">
+  <div class="sec-title">All Participants</div>
+  <div class="sec-sub" id="playerCount">Loading...</div>
+  <div class="players-grid" id="playersContent"></div>
+</div>
 
-  <!-- PLAYERS -->
-  <div id="players" class="section">
-    <div class="sec-head">
-      <div class="sec-title">All Participants</div>
-      <div class="sec-sub" id="playerCount">Loading...</div>
-    </div>
-    <div id="playersContent"><div class="loading">Loading participants</div></div>
-  </div>
-
-</main>
-
-<footer>Golf Sweepstake 2026 &nbsp;·&nbsp; Data updates automatically</footer>
+<footer>Golf Sweepstake 2027 &nbsp;·&nbsp; Data updates automatically</footer>
 
 <script>
 const DATA_URL = 'https://raw.githubusercontent.com/pierregoldie-design/golf-sweepstake/main/scores.json';
 const HISTORY_URL = 'https://raw.githubusercontent.com/pierregoldie-design/golf-sweepstake/main/sweepstake_history.json';
-
-const TOURNAMENTS = ['The Players','Masters','PGA Champ.','US Open','The Open'];
-const TIER_COLORS = ['t1','t2','t3','t4','t5','t6'];
+const ESPN_URL = 'https://site.web.api.espn.com/apis/site/v2/sports/golf/pga/scoreboard';
+const EVENT_IDS = {
+  'The Players': '401811937',
+  'Masters': '401811941',
+  'PGA Championship': '401811947',
+  'US Open': '401811952',
+  'The Open': '401811957'
+};
 
 let scoresData = null;
 let historyData = null;
+let liveData = null;
+let currentTab = 'tournament';
 
-function showSection(id, btn) {
+function showTab(id, btn) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   btn.classList.add('active');
+  currentTab = id;
 }
 
-function fmt(val) {
-  if (val === null || val === undefined || val === '' || val === '—' || val === '-') return '<span class="dash">—</span>';
-  if (typeof val === 'number' && val !== 0) return `<span class="score-val">${val}</span>`;
-  if (val === 0) return '<span class="dash">0</span>';
-  return val;
+function norm(s) {
+  return (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[øØ]/g, 'o').replace(/[åÅ]/g, 'a').replace(/[æÆ]/g, 'ae')
+    .toLowerCase().trim();
 }
 
-function rankMedal(rank) {
-  if (rank === 1) return `<span class="medal medal-1">1</span>`;
-  if (rank === 2) return `<span class="medal medal-2">2</span>`;
-  if (rank === 3) return `<span class="medal medal-3">3</span>`;
-  return `<span class="medal-n">${rank}</span>`;
+function fmtScore(s) {
+  if (s < 0) return `<span class="score-under">${s}</span>`;
+  if (s > 0) return `<span class="score-over">+${s}</span>`;
+  return `<span class="score-even">E</span>`;
+}
+
+function medal(i) {
+  if (i === 0) return '<span class="medal-1">1</span>';
+  if (i === 1) return '<span class="medal-2">2</span>';
+  if (i === 2) return '<span class="medal-3">3</span>';
+  return `<span style="color:var(--text-dim)">${i+1}</span>`;
 }
 
 function initials(name) {
-  return name.split(' ').map(p=>p[0]).join('').substring(0,2).toUpperCase();
+  return (name || '').split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase();
 }
 
+// ── RENDER TOURNAMENT ──────────────────────────────────────────────────────
+function renderTournament() {
+  const loading = document.getElementById('tournamentLoading');
+  const grid = document.getElementById('tournamentGrid');
+
+  if (!scoresData) return;
+
+  // Update subtitle
+  const sub = document.getElementById('tournamentSub');
+  if (sub && scoresData.updated) {
+    const d = new Date(scoresData.updated);
+    sub.textContent = 'Live scores — ' + d.toLocaleDateString('en-GB', {weekday:'long', day:'numeric', month:'long'});
+  }
+
+  // Parse ESPN live data into golfer score map
+  const liveScoreMap = {};
+  if (liveData && liveData.events && liveData.events[0]) {
+    const competitors = liveData.events[0].competitions[0].competitors || [];
+    competitors.forEach(c => {
+      const name = c.athlete.displayName;
+      const raw = c.score || 'E';
+      const score = (raw === 'E' || raw === 'Even') ? 0 : (parseInt(raw) || 0);
+      const thru = c.stats?.find(s => s.name === 'thru')?.displayValue || c.status?.type?.shortDetail || '—';
+      liveScoreMap[norm(name)] = { name, score, thru };
+    });
+  }
+
+  const hasLive = Object.keys(liveScoreMap).length > 0;
+
+  if (!hasLive) {
+    loading.style.display = 'block';
+    grid.style.display = 'none';
+    return;
+  }
+
+  loading.style.display = 'none';
+  grid.style.display = 'grid';
+
+  // Build picker lookup from scoresData
+  const pickerMap = {};
+  (scoresData.current_results || []).forEach(p => {
+    Object.values(p.tier_scores || {}).forEach(t => {
+      const g = norm(t.golfer || '');
+      if (g) {
+        if (!pickerMap[g]) pickerMap[g] = [];
+        pickerMap[g].push(p.participant.split(' ')[0]);
+      }
+    });
+  });
+
+  function getPickers(espnName) {
+    const n = norm(espnName);
+    if (pickerMap[n]) return pickerMap[n];
+    const last = n.split(' ').slice(-1)[0];
+    const key = Object.keys(pickerMap).find(k => k.split(' ').slice(-1)[0] === last);
+    return key ? pickerMap[key] : [];
+  }
+
+  // Sort golfers by score
+  const golfers = Object.values(liveScoreMap).sort((a, b) => a.score - b.score);
+
+  // Live leaderboard rows
+  const liveRows = golfers.map((g, i) => {
+    const pickers = getPickers(g.name);
+    return `<tr>
+      <td style="color:var(--text-dim);font-size:12px;width:32px">${i+1}</td>
+      <td style="color:var(--cream);font-weight:500">${g.name}</td>
+      <td style="text-align:right">${fmtScore(g.score)}</td>
+      <td style="text-align:right;font-size:11px;color:var(--text-dim)">${g.thru}</td>
+      <td class="picked-by">${pickers.length ? pickers.join(', ') : '—'}</td>
+    </tr>`;
+  }).join('');
+
+  // Projected standings using scoresData golfer names matched to live scores
+  function getLiveScore(golferName) {
+    const n = norm(golferName);
+    if (liveScoreMap[n]) return liveScoreMap[n].score;
+    const last = n.split(' ').slice(-1)[0];
+    const key = Object.keys(liveScoreMap).find(k => k.split(' ').slice(-1)[0] === last);
+    return key ? liveScoreMap[key].score : 0;
+  }
+
+  const projected = (scoresData.current_results || []).map(p => {
+    const total = Object.values(p.tier_scores || {}).reduce((sum, t) => sum + getLiveScore(t.golfer), 0);
+    return { name: p.participant, score: total };
+  }).sort((a, b) => a.score - b.score);
+
+  const projRows = projected.map((p, i) => `<tr>
+    <td style="width:36px">${medal(i)}</td>
+    <td style="color:var(--cream);font-weight:500">${p.name}</td>
+    <td style="text-align:right">${fmtScore(p.score)}</td>
+  </tr>`).join('');
+
+  grid.innerHTML = `
+    <div class="card">
+      <div class="card-header">
+        <span class="card-label">Live Golfer Leaderboard</span>
+        <span class="live-badge">LIVE</span>
+      </div>
+      <div style="overflow-x:auto">
+        <table>
+          <thead><tr>
+            <th>Pos</th><th>Golfer</th>
+            <th style="text-align:right">Score</th>
+            <th style="text-align:right">Thru</th>
+            <th>Picked by</th>
+          </tr></thead>
+          <tbody>${liveRows}</tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <span class="card-label">Projected Standings</span>
+      </div>
+      <div style="overflow-x:auto">
+        <table>
+          <thead><tr>
+            <th>Pos</th><th>Participant</th>
+            <th style="text-align:right">Score</th>
+          </tr></thead>
+          <tbody>${projRows}</tbody>
+        </table>
+      </div>
+    </div>`;
+}
+
+// ── RENDER LEADERBOARD ─────────────────────────────────────────────────────
+function renderLeaderboard() {
+  if (!scoresData) return;
+  const results = scoresData.current_results || [];
+
+  const rows = results.map((p, i) => {
+    const score = p.total || 0;
+    return `<tr>
+      <td style="width:40px">${medal(i)}</td>
+      <td style="color:var(--cream);font-weight:500">${p.participant}</td>
+      <td style="text-align:right">${fmtScore(score)}</td>
+      <td style="text-align:right;color:var(--text-dim)">—</td>
+      <td style="text-align:right;color:var(--text-dim)">—</td>
+      <td style="text-align:right;color:var(--text-dim)">—</td>
+      <td style="text-align:right;color:var(--text-dim)">—</td>
+      <td style="text-align:right">${fmtScore(score)}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('leaderboardContent').innerHTML = `
+    <table>
+      <thead><tr>
+        <th>#</th><th>Participant</th>
+        <th style="text-align:right;color:var(--gold)">The Players</th>
+        <th style="text-align:right">Masters</th>
+        <th style="text-align:right">PGA</th>
+        <th style="text-align:right">US Open</th>
+        <th style="text-align:right">The Open</th>
+        <th style="text-align:right">Total</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+// ── RENDER TIERS ───────────────────────────────────────────────────────────
+function renderTiers() {
+  if (!scoresData) return;
+  const tiers = {};
+  (scoresData.current_results || []).forEach(p => {
+    Object.entries(p.tier_scores || {}).forEach(([t, v]) => {
+      if (!tiers[t]) tiers[t] = new Set();
+      if (v.golfer) tiers[t].add(v.golfer);
+    });
+  });
+
+  const colors = ['t1','t2','t3','t4','t5','t6'];
+  const html = Object.entries(tiers).map(([t, golfers], i) => `
+    <div class="tier-card">
+      <div class="tier-badge ${colors[i]}">${t}</div>
+      ${[...golfers].map(g => `<div class="golfer-row">${g}</div>`).join('')}
+    </div>`).join('');
+
+  document.getElementById('tiersContent').innerHTML = html;
+}
+
+// ── RENDER PLAYERS ─────────────────────────────────────────────────────────
+function renderPlayers() {
+  if (!scoresData) return;
+  const results = scoresData.current_results || [];
+  document.getElementById('playerCount').textContent = results.length + ' participants · 2027 Season';
+  document.getElementById('playersContent').innerHTML = results.map(p => `
+    <div class="player-card">
+      <div class="player-avatar">${initials(p.participant)}</div>
+      <div class="player-name">${p.participant}</div>
+    </div>`).join('');
+}
+
+// ── LOAD DATA ──────────────────────────────────────────────────────────────
 async function loadData() {
   try {
     const [s, h] = await Promise.all([
@@ -389,265 +387,25 @@ async function loadData() {
     ]);
     scoresData = s;
     historyData = h;
-    renderAll();
+
+    // Update badge
+    if (scoresData.updated) {
+      const d = new Date(scoresData.updated);
+      document.getElementById('updatedBadge').textContent =
+        'Updated ' + d.toLocaleDateString('en-GB', {day:'numeric', month:'short'}) +
+        ', ' + d.toLocaleTimeString('en-GB', {hour:'2-digit', minute:'2-digit'});
+    }
+
+    renderLeaderboard();
+    renderTiers();
+    renderPlayers();
+
+    // Now fetch ESPN — renderTournament fires only after this completes
+    await loadLiveScores();
   } catch(e) {
-    document.getElementById('leaderboardContent').innerHTML = '<div class="loading">Could not load data — please try again later</div>';
+    console.log('Load error:', e);
   }
 }
-
-function renderAll() {
-  if (!scoresData) return;
-
-  // Updated pill
-  const d = new Date(scoresData.updated);
-  document.getElementById('updatedPill').textContent = 'Updated ' + d.toLocaleString('en-GB', {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
-
-  // Tournament pills
-  const currentT = (scoresData.current_tournament || '').toLowerCase();
-  const tMap = { 'the players':'The Players', 'masters':'Masters', 'pga championship':'PGA Champ.', 'us open':'US Open', 'the open':'The Open' };
-  const pills = TOURNAMENTS.map(t => {
-    const isLive = Object.keys(tMap).some(k => tMap[k] === t && currentT.includes(k.split(' ')[0].toLowerCase()));
-    return `<div class="t-pill${isLive?' live':''}"><div class="t-dot"></div>${t}${isLive?' <b style="font-size:0.62rem;margin-left:4px;font-family:\'DM Mono\',monospace;letter-spacing:2px">LIVE</b>':''}</div>`;
-  }).join('');
-  document.getElementById('tournamentPills').innerHTML = pills;
-
-  renderLeaderboard();
-  renderTiers();
-  renderPlayers();
-  loadLiveScores();
-}
-
-function renderLeaderboard() {
-  const results = scoresData.current_results || [];
-  // Sort by total desc
-  const sorted = [...results].sort((a,b) => (a.total||0) - (b.total||0));
-
-  let html = `<table class="lb-table">
-    <thead><tr>
-      <th style="width:44px">#</th>
-      <th>Participant</th>
-      <th class="center">The Players</th>
-      <th class="center">Masters</th>
-      <th class="center">PGA</th>
-      <th class="center">US Open</th>
-      <th class="center">The Open</th>
-      <th class="center">Total</th>
-    </tr></thead><tbody>`;
-
-  sorted.forEach((p, i) => {
-    const rank = i + 1;
-    const total = p.total || 0;
-    html += `<tr>
-      <td><div class="rank-wrap">${rankMedal(rank)}</div></td>
-      <td class="name-cell">${p.participant}</td>
-      <td class="center">${fmt(total)}</td>
-      <td class="center"><span class="dash">—</span></td>
-      <td class="center"><span class="dash">—</span></td>
-      <td class="center"><span class="dash">—</span></td>
-      <td class="center"><span class="dash">—</span></td>
-      <td class="center"><span class="score-total">${total}</span></td>
-    </tr>`;
-  });
-
-  html += '</tbody></table>';
-  document.getElementById('leaderboardContent').innerHTML = html;
-}
-
-function renderTournament() {
-  const tournament = scoresData?.current_tournament || 'Current Tournament';
-  const sub = document.getElementById('tournamentSub');
-  if (sub) sub.textContent = 'Live scores — ' + new Date(scoresData.updated).toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'});
-
-  // Build golfer->pickers lookup
-  const golferPickers = {};
-  (scoresData.current_results || []).forEach(p => {
-    Object.values(p.tier_scores || {}).forEach(t => {
-      const g = (t.golfer || '').trim();
-      if (g) {
-        if (!golferPickers[g]) golferPickers[g] = [];
-        golferPickers[g].push(p.participant.split(' ')[0]);
-      }
-    });
-  });
-
-  if (!liveData) {
-    const liveEl = document.getElementById('tournamentContent');
-    if (liveEl) liveEl.innerHTML = `
-      <div style="text-align:center;padding:48px;color:var(--text-dim)">
-        <div style="font-size:32px;margin-bottom:12px">⛳</div>
-        <div style="font-size:14px">Live scores will appear here once the tournament begins.</div>
-        <div style="font-size:12px;margin-top:8px;color:rgba(138,158,142,0.5)">Checking ESPN every 2 minutes...</div>
-      </div>`;
-    loadLiveScores();
-    return;
-  }
-
-  // Parse ESPN competitors
-  let golfers = [];
-  try {
-    const competitors = liveData?.events?.[0]?.competitions?.[0]?.competitors || [];
-    competitors.forEach(c => {
-      const name = c.athlete?.displayName || '';
-      const rawScore = c.score || 'E';
-      let score = 0;
-      if (rawScore !== 'E' && rawScore !== 'Even') score = parseInt(rawScore) || 0;
-      const thru = c.stats?.find(s => s.name === 'thru')?.displayValue
-                || c.status?.type?.shortDetail || '—';
-      golfers.push({ name, score, thru });
-    });
-    golfers.sort((a,b) => a.score - b.score);
-  } catch(e) { console.log('ESPN parse error:', e); }
-
-  // Fuzzy picker lookup
-  function getPickers(name) {
-    if (golferPickers[name]) return golferPickers[name];
-    const last = name.split(' ').slice(-1)[0];
-    const match = Object.keys(golferPickers).find(k => k.split(' ').slice(-1)[0] === last);
-    return match ? golferPickers[match] : [];
-  }
-
-  // Score formatting
-  function fmtLive(s) {
-    if (s < 0) return `<span style="color:#5dd47a;font-weight:700">${s}</span>`;
-    if (s > 0) return `<span style="color:#e05050;font-weight:700">+${s}</span>`;
-    return `<span style="color:var(--text-dim);font-weight:700">E</span>`;
-  }
-
-  // Build live leaderboard table
-  let liveRows = golfers.map((g, i) => {
-    const pickers = getPickers(g.name);
-    return `<tr style="border-bottom:1px solid rgba(255,255,255,0.04)">
-      <td style="padding:9px 10px;color:var(--text-dim);font-size:12px;width:32px">${i+1}</td>
-      <td style="padding:9px 10px;font-weight:500;color:var(--cream)">${g.name}</td>
-      <td style="padding:9px 10px;text-align:right">${fmtLive(g.score)}</td>
-      <td style="padding:9px 10px;text-align:right;font-size:11px;color:var(--text-dim)">${g.thru}</td>
-      <td style="padding:9px 10px;font-size:11px;color:var(--text-dim)">${pickers.length ? '<span style="color:var(--text)">'+pickers.join(', ')+'</span>' : '—'}</td>
-    </tr>`;
-  }).join('');
-
-  // Calculate projected scores
-  const liveScores = {};
-  golfers.forEach(g => { liveScores[g.name] = g.score; });
-
-  function getGolferScore(golferName) {
-    const g = golferName?.trim();
-    if (!g) return 0;
-    if (liveScores[g] !== undefined) return liveScores[g];
-    const last = g.split(' ').slice(-1)[0];
-    const match = Object.keys(liveScores).find(k => k.split(' ').slice(-1)[0] === last);
-    return match ? liveScores[match] : 0;
-  }
-
-  const projected = (scoresData.current_results || []).map(p => {
-    const total = Object.values(p.tier_scores || {}).reduce((sum, t) => sum + getGolferScore(t.golfer), 0);
-    return { participant: p.participant, score: total };
-  }).sort((a,b) => a.score - b.score);
-
-  let projRows = projected.map((p, i) => `
-    <tr style="border-bottom:1px solid rgba(255,255,255,0.04)">
-      <td style="padding:9px 10px;width:36px">${rankMedal(i+1)}</td>
-      <td style="padding:9px 10px;font-weight:500;color:var(--cream)">${p.participant}</td>
-      <td style="padding:9px 10px;text-align:right">${fmtLive(p.score)}</td>
-    </tr>`).join('');
-
-  const content = document.getElementById('tournamentContent');
-  if (content) content.innerHTML = `
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
-      <div style="background:var(--green-mid);border:1px solid rgba(255,255,255,0.07);border-radius:10px;overflow:hidden">
-        <div style="padding:12px 16px;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:space-between">
-          <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600">Live Golfer Leaderboard</span>
-          <span style="font-size:9px;background:#e05050;color:#fff;padding:2px 7px;border-radius:3px;font-weight:600;letter-spacing:1px">LIVE</span>
-        </div>
-        <div style="overflow-x:auto">
-          <table style="width:100%;border-collapse:collapse">
-            <thead><tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
-              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);text-align:left">Pos</th>
-              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);text-align:left">Golfer</th>
-              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);text-align:right">Score</th>
-              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);text-align:right">Thru</th>
-              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim)">Picked by</th>
-            </tr></thead>
-            <tbody>${liveRows}</tbody>
-          </table>
-        </div>
-      </div>
-      <div style="background:var(--green-mid);border:1px solid rgba(255,255,255,0.07);border-radius:10px;overflow:hidden">
-        <div style="padding:12px 16px;border-bottom:1px solid rgba(255,255,255,0.06)">
-          <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600">Projected Standings</span>
-        </div>
-        <div style="overflow-x:auto">
-          <table style="width:100%;border-collapse:collapse">
-            <thead><tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
-              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);text-align:left">Pos</th>
-              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);text-align:left">Participant</th>
-              <th style="padding:8px 10px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);text-align:right">Score</th>
-            </tr></thead>
-            <tbody>${projRows}</tbody>
-          </table>
-        </div>
-      </div>
-    </div>`;
-}
-
-
-function renderTiers() {
-  // Build tier list from results data
-  const tiers = { 'Tier 1':[], 'Tier 2':[], 'Tier 3':[], 'Tier 4':[], 'Tier 5':[], 'Tier 6':[] };
-
-  // Collect golfers from picks
-  (scoresData.current_results || []).forEach(p => {
-    const ts = p.tier_scores || {};
-    Object.keys(tiers).forEach(t => {
-      const g = (ts[t] || {}).golfer;
-      if (g && !tiers[t].includes(g)) tiers[t].push(g);
-    });
-  });
-
-  const tierColors = ['t1','t2','t3','t4','t5','t6'];
-  const tierKeys = Object.keys(tiers);
-
-  // If no picks yet, show message
-  const hasPicks = tierKeys.some(t => tiers[t].length > 0);
-  if (!hasPicks) {
-    document.getElementById('tiersContent').innerHTML = `
-      <div style="background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);border-radius:8px;padding:20px 24px;color:rgba(245,240,232,0.55);font-size:0.84rem;">
-        ⛳ &nbsp; Picks haven't been submitted yet for this tournament. Check back soon!
-      </div>`;
-    return;
-  }
-
-  let html = '<div class="tiers-grid">';
-  tierKeys.forEach((t, i) => {
-    html += `<div class="tier-card">
-      <div class="tier-badge ${tierColors[i]}">${t}</div>`;
-    tiers[t].forEach((g, gi) => {
-      html += `<div class="golfer-name${gi < 2 ? ' top-g' : ''}">${g}</div>`;
-    });
-    html += '</div>';
-  });
-  html += '</div>';
-  document.getElementById('tiersContent').innerHTML = html;
-}
-
-function renderPlayers() {
-  const results = scoresData.current_results || [];
-  document.getElementById('playerCount').textContent = results.length + ' participants · 2026 Season';
-
-  let html = '<div class="participants-grid">';
-  results.forEach(p => {
-    html += `<div class="p-card">
-      <div class="p-avatar">${initials(p.participant)}</div>
-      <div class="p-name">${p.participant}</div>
-    </div>`;
-  });
-  html += '</div>';
-  document.getElementById('playersContent').innerHTML = html;
-}
-
-
-const ESPN_URL = 'https://site.web.api.espn.com/apis/site/v2/sports/golf/pga/scoreboard';
-const EVENT_IDS = {'The Players':'401811937','Masters':'401811941','PGA Championship':'401811947','US Open':'401811952','The Open':'401811957'};
-let liveData = null;
 
 async function loadLiveScores() {
   if (!scoresData) return;
@@ -657,16 +415,16 @@ async function loadLiveScores() {
     const r = await fetch(ESPN_URL + '?event=' + eventId + '&lang=en&region=us&t=' + Date.now());
     liveData = await r.json();
     renderTournament();
-  } catch(e) { console.log('ESPN error:', e); }
+  } catch(e) {
+    console.log('ESPN error:', e);
+    renderTournament(); // render with scoresData scores if ESPN fails
+  }
 }
 
-// Load data on page start
+// Boot
 loadData();
-loadLiveScores();
-// Refresh every 5 minutes / 2 minutes
 setInterval(loadData, 5 * 60 * 1000);
 setInterval(loadLiveScores, 2 * 60 * 1000);
-
 </script>
 </body>
 </html>
