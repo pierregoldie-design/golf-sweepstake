@@ -502,7 +502,7 @@ function renderTournament() {
   function getPickers(name) {
     if (golferPickers[name]) return golferPickers[name];
     const last = name.split(' ').slice(-1)[0];
-    const match = Object.keys(golferPickers).find(k => k.includes(last));
+    const match = Object.keys(golferPickers).find(k => k.split(' ').slice(-1)[0] === last);
     return match ? golferPickers[match] : [];
   }
 
@@ -534,7 +534,7 @@ function renderTournament() {
     if (!g) return 0;
     if (liveScores[g] !== undefined) return liveScores[g];
     const last = g.split(' ').slice(-1)[0];
-    const match = Object.keys(liveScores).find(k => k.includes(last));
+    const match = Object.keys(liveScores).find(k => k.split(' ').slice(-1)[0] === last);
     return match ? liveScores[match] : 0;
   }
 
