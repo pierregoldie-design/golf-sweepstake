@@ -389,7 +389,10 @@ async function loadData() {
     ]);
     scoresData = s;
     historyData = h;
-    renderAll();
+    renderLeaderboard();
+    renderTiers();
+    renderPlayers();
+    loadLiveScores();
   } catch(e) {
     document.getElementById('leaderboardContent').innerHTML = '<div class="loading">Could not load data — please try again later</div>';
   }
@@ -668,7 +671,6 @@ document.getElementById('tournamentInner').innerHTML = '<div style="text-align:c
 
 // Load data on page start
 loadData();
-loadLiveScores();
 // Refresh every 5 minutes / 2 minutes
 setInterval(loadData, 5 * 60 * 1000);
 setInterval(loadLiveScores, 2 * 60 * 1000);
