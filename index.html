@@ -660,6 +660,9 @@ async function loadLiveScores() {
   } catch(e) { console.log('ESPN error:', e); }
 }
 
+// Show loading state immediately on tournament tab
+document.getElementById('tournament').innerHTML = '<div style="text-align:center;padding:80px;color:#a0c878;font-family:monospace;letter-spacing:2px;">LOADING LIVE SCORES...</div>';
+
 // Load data on page start
 loadData();
 loadLiveScores();
