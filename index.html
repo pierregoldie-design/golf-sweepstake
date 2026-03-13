@@ -389,10 +389,7 @@ async function loadData() {
     ]);
     scoresData = s;
     historyData = h;
-    renderLeaderboard();
-    renderTiers();
-    renderPlayers();
-    loadLiveScores();
+    renderAll();
   } catch(e) {
     document.getElementById('leaderboardContent').innerHTML = '<div class="loading">Could not load data — please try again later</div>';
   }
@@ -415,6 +412,7 @@ function renderAll() {
   document.getElementById('tournamentPills').innerHTML = pills;
 
   renderLeaderboard();
+  renderTournament();
   renderTiers();
   renderPlayers();
 }
@@ -662,10 +660,9 @@ async function loadLiveScores() {
   } catch(e) { console.log('ESPN error:', e); }
 }
 
-
-
 // Load data on page start
 loadData();
+loadLiveScores();
 // Refresh every 5 minutes / 2 minutes
 setInterval(loadData, 5 * 60 * 1000);
 setInterval(loadLiveScores, 2 * 60 * 1000);
