@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- build: 2026-03-14T12:52:06.389028 -->
+<head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0"><!-- build: 2026-03-14T12:52:06.389028 -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Golf Sweepstake 2026</title>
@@ -95,7 +98,7 @@
 
 <div class="header">
   <div style="font-size:24px;margin-bottom:8px">⛳ ⛳ ⛳</div>
-  <h1>Golf Sweepstake <span>2027</span></h1>
+  <h1>Golf Sweepstake <span>2026</span></h1>
   <div class="subtitle">Annual Major Championship</div>
   <div class="updated-badge" id="updatedBadge">Loading...</div>
 </div>
@@ -381,7 +384,7 @@ function renderTiers() {
 function renderPlayers() {
   if (!scoresData) return;
   const results = scoresData.current_results || [];
-  document.getElementById('playerCount').textContent = results.length + ' participants · 2027 Season';
+  document.getElementById('playerCount').textContent = results.length + ' participants · 2026 Season';
   document.getElementById('playersContent').innerHTML = results.map(p => `
     <div class="player-card">
       <div class="player-avatar">${initials(p.participant)}</div>
