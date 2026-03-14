@@ -334,6 +334,12 @@ function renderLeaderboard() {
     </tr>`;
   }).join('');
 
+  // Update lock status label
+  const lockEl = document.getElementById('leaderboardStatus');
+  if (lockEl && scoresData.updated) {
+    const d = new Date(scoresData.updated);
+    lockEl.textContent = 'Locked after Round 2 · Last updated ' + d.toLocaleDateString('en-GB',{day:'numeric',month:'short'}) + ' at ' + d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
+  }
   document.getElementById('leaderboardContent').innerHTML = `
     <table>
       <thead><tr>
