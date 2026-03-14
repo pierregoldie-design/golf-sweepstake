@@ -206,7 +206,11 @@ function renderTournament() {
       const name = c.athlete.displayName;
       const raw = c.score || 'E';
       const score = (raw === 'E' || raw === 'Even') ? 0 : (parseInt(raw) || 0);
-      const thru = c.stats?.find(s => s.name === 'thru')?.displayValue || c.status?.type?.shortDetail || '—';
+      // Thru: count holes played in current round (R3 if exists, else R2, else R1)
+      const currentRound = c.linescores?.filter(r => r.linescores?.length > 0).slice(-1)[0];
+      const holesPlayed = currentRound?.linescores?.length || 0;
+      const roundScore = currentRound?.displayValue || '';
+      const thru = holesPlayed === 18 ? 'F' : (holesPlayed > 0 ? holesPlayed + (roundScore ? ' (' + roundScore + ')' : '') : '—');
       liveScoreMap[norm(name)] = { name, score, thru };
     });
   }
