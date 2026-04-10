@@ -323,18 +323,24 @@ function renderTournament() {
 function renderLeaderboard() {
   if (!scoresData) return;
   const results = scoresData.current_results || [];
+  const ph = scoresData.players_results || {};
 
-  const rows = results.map((p, i) => {
-    const score = p.total || 0;
+  const combined = results.map(p => {
+    const ps = ph[p.participant] ?? 0;
+    const ms = p.total || 0;
+    return { name: p.participant, players: ps, masters: ms, total: ps + ms };
+  }).sort((a, b) => a.total - b.total);
+
+  const rows = combined.map((p, i) => {
     return `<tr>
       <td style="width:40px">${medal(i)}</td>
-      <td style="color:var(--cream);font-weight:500">${p.participant}</td>
-      <td style="text-align:right">${fmtScore(score)}</td>
+      <td style="color:var(--cream);font-weight:500">${p.name}</td>
+      <td style="text-align:right">${fmtScore(p.players)}</td>
+      <td style="text-align:right">${fmtScore(p.masters)}</td>
       <td style="text-align:right;color:var(--text-dim)">—</td>
       <td style="text-align:right;color:var(--text-dim)">—</td>
       <td style="text-align:right;color:var(--text-dim)">—</td>
-      <td style="text-align:right;color:var(--text-dim)">—</td>
-      <td style="text-align:right">${fmtScore(score)}</td>
+      <td style="text-align:right">${fmtScore(p.total)}</td>
     </tr>`;
   }).join('');
 
@@ -348,8 +354,8 @@ function renderLeaderboard() {
     <table>
       <thead><tr>
         <th>#</th><th>Participant</th>
-        <th style="text-align:right;color:var(--gold)">The Players</th>
-        <th style="text-align:right">Masters</th>
+        <th style="text-align:right">The Players</th>
+        <th style="text-align:right;color:var(--gold)">Masters</th>
         <th style="text-align:right">PGA</th>
         <th style="text-align:right">US Open</th>
         <th style="text-align:right">The Open</th>
