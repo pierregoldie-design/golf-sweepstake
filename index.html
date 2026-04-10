@@ -269,13 +269,17 @@ function renderTournament() {
   function getLiveScore(golferName) {
     const n = norm(golferName);
     if (liveScoreMap[n]) return liveScoreMap[n].score;
-    const last = n.split(' ').slice(-1)[0];
-    const key = Object.keys(liveScoreMap).find(k => k.split(' ').slice(-1)[0] === last);
-    return key ? liveScoreMap[key].score : 0;
+    return null;
   }
 
   const projected = (scoresData.current_results || []).map(p => {
-    const total = Object.values(p.tier_scores || {}).reduce((sum, t) => sum + getLiveScore(t.golfer), 0);
+    let total = 0;
+    Object.values(p.tier_scores || {}).forEach(t => {
+      let s = getLiveScore(t.golfer);
+      if (s === null && t.reserve) s = getLiveScore(t.reserve);
+      if (s === null) s = 0;
+      total += s;
+    });
     return { name: p.participant, score: total };
   }).sort((a, b) => a.score - b.score);
 
