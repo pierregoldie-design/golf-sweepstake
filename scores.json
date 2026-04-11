@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-10T19:23:39",
+  "updated": "2026-04-11T13:02:23",
   "current_tournament": "Masters",
   "players_results": {
     "Leon Visser": -23,
@@ -55,7 +55,7 @@
   "current_results": [
     {
       "participant": "Andrew Dixon",
-      "total": -13,
+      "total": -17,
       "tier_scores": {
         "Tier 1": {
           "golfer": "Rory McIlroy",
@@ -117,10 +117,10 @@
           "original_pick": "Charl Schwartzel",
           "reserve": "Zach Johnson",
           "using_reserve": false,
-          "score": 8,
+          "score": 4,
           "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
+          "missed_cut": false,
+          "status": "active",
           "position": ""
         }
       },
@@ -128,7 +128,7 @@
     },
     {
       "participant": "Louis MacLachlan",
-      "total": -1,
+      "total": -5,
       "tier_scores": {
         "Tier 1": {
           "golfer": "Rory McIlroy",
@@ -190,14 +190,87 @@
           "original_pick": "Charl Schwartzel",
           "reserve": "Zach Johnson",
           "using_reserve": false,
-          "score": 8,
+          "score": 4,
           "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
+          "missed_cut": false,
+          "status": "active",
           "position": ""
         }
       },
       "rank": 2
+    },
+    {
+      "participant": "Anthony Archer",
+      "total": 4,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "Scottie Scheffler",
+          "original_pick": "Scottie Scheffler",
+          "reserve": "Bryson DeChambeau",
+          "using_reserve": false,
+          "score": 0,
+          "raw_score": 0,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "Xander Schauffele",
+          "original_pick": "Xander Schauffele",
+          "reserve": "Collin Morikawa",
+          "using_reserve": false,
+          "score": -2,
+          "raw_score": -2,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "Hideki Matsuyama",
+          "original_pick": "Hideki Matsuyama",
+          "reserve": "Brooks Koepka",
+          "using_reserve": false,
+          "score": -2,
+          "raw_score": -2,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "Jordan Spieth",
+          "original_pick": "Jordan Spieth",
+          "reserve": "Cameron Smith",
+          "using_reserve": false,
+          "score": 1,
+          "raw_score": 1,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "Maverick McNealy",
+          "original_pick": "Maverick McNealy",
+          "reserve": "Davis Riley",
+          "using_reserve": false,
+          "score": 3,
+          "raw_score": 3,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "Charl Schwartzel",
+          "original_pick": "Charl Schwartzel",
+          "reserve": "Zach Johnson",
+          "using_reserve": false,
+          "score": 4,
+          "raw_score": 4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        }
+      },
+      "rank": 3
     },
     {
       "participant": "Leon Visser",
@@ -270,84 +343,11 @@
           "position": ""
         }
       },
-      "rank": 3
-    },
-    {
-      "participant": "Anthony Archer",
-      "total": 8,
-      "tier_scores": {
-        "Tier 1": {
-          "golfer": "Scottie Scheffler",
-          "original_pick": "Scottie Scheffler",
-          "reserve": "Bryson DeChambeau",
-          "using_reserve": false,
-          "score": 0,
-          "raw_score": 0,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 2": {
-          "golfer": "Xander Schauffele",
-          "original_pick": "Xander Schauffele",
-          "reserve": "Collin Morikawa",
-          "using_reserve": false,
-          "score": -2,
-          "raw_score": -2,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 3": {
-          "golfer": "Hideki Matsuyama",
-          "original_pick": "Hideki Matsuyama",
-          "reserve": "Brooks Koepka",
-          "using_reserve": false,
-          "score": -2,
-          "raw_score": -2,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 4": {
-          "golfer": "Jordan Spieth",
-          "original_pick": "Jordan Spieth",
-          "reserve": "Cameron Smith",
-          "using_reserve": false,
-          "score": 1,
-          "raw_score": 1,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 5": {
-          "golfer": "Maverick McNealy",
-          "original_pick": "Maverick McNealy",
-          "reserve": "Davis Riley",
-          "using_reserve": false,
-          "score": 3,
-          "raw_score": 3,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 6": {
-          "golfer": "Charl Schwartzel",
-          "original_pick": "Charl Schwartzel",
-          "reserve": "Zach Johnson",
-          "using_reserve": false,
-          "score": 8,
-          "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        }
-      },
       "rank": 4
     },
     {
       "participant": "Jason Brown",
-      "total": 9,
+      "total": 5,
       "tier_scores": {
         "Tier 1": {
           "golfer": "Scottie Scheffler",
@@ -409,18 +409,164 @@
           "original_pick": "Charl Schwartzel",
           "reserve": "Zach Johnson",
           "using_reserve": false,
-          "score": 8,
+          "score": 4,
           "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
+          "missed_cut": false,
+          "status": "active",
           "position": ""
         }
       },
       "rank": 5
     },
     {
+      "participant": "Neil McMaster",
+      "total": 5,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "Jon Rahm",
+          "original_pick": "Jon Rahm",
+          "reserve": "Rory McIlroy",
+          "using_reserve": false,
+          "score": 4,
+          "raw_score": 4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "Xander Schauffele",
+          "original_pick": "Xander Schauffele",
+          "reserve": "Tommy Fleetwood",
+          "using_reserve": false,
+          "score": -2,
+          "raw_score": -2,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "Patrick Reed",
+          "original_pick": "Patrick Reed",
+          "reserve": "Robert MacIntyre",
+          "using_reserve": false,
+          "score": -6,
+          "raw_score": -6,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "Si Woo Kim",
+          "original_pick": "Si Woo Kim",
+          "reserve": "Akshay Bhatia",
+          "using_reserve": false,
+          "score": 4,
+          "raw_score": 4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "Jacob Bridgeman",
+          "original_pick": "Jacob Bridgeman",
+          "reserve": "Aldrich Potgieter",
+          "using_reserve": false,
+          "score": 1,
+          "raw_score": 1,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "Charl Schwartzel",
+          "original_pick": "Charl Schwartzel",
+          "reserve": "Zach Johnson",
+          "using_reserve": false,
+          "score": 4,
+          "raw_score": 4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        }
+      },
+      "rank": 6
+    },
+    {
+      "participant": "Stephan Kemp",
+      "total": 5,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "Scottie Scheffler",
+          "original_pick": "Scottie Scheffler",
+          "reserve": "Bryson DeChambeau",
+          "using_reserve": false,
+          "score": 0,
+          "raw_score": 0,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "Ludvig \u00c5berg",
+          "original_pick": "Ludvig Aberg",
+          "reserve": "Collin Morikawa",
+          "using_reserve": false,
+          "score": 0,
+          "raw_score": 0,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "Cameron Young",
+          "original_pick": "Cameron Young",
+          "reserve": "Chris Gotterup",
+          "using_reserve": false,
+          "score": -4,
+          "raw_score": -4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "Si Woo Kim",
+          "original_pick": "Si Woo Kim",
+          "reserve": "Nicolai Hojgaard",
+          "using_reserve": false,
+          "score": 4,
+          "raw_score": 4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "Jacob Bridgeman",
+          "original_pick": "Jacob Bridgeman",
+          "reserve": "Carlos Ortiz",
+          "using_reserve": false,
+          "score": 1,
+          "raw_score": 1,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "Charl Schwartzel",
+          "original_pick": "Charl Schwartzel",
+          "reserve": "Ethan Fang",
+          "using_reserve": false,
+          "score": 4,
+          "raw_score": 4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        }
+      },
+      "rank": 7
+    },
+    {
       "participant": "Ruan Erasmus",
-      "total": 11,
+      "total": 7,
       "tier_scores": {
         "Tier 1": {
           "golfer": "Jon Rahm",
@@ -482,14 +628,14 @@
           "original_pick": "Charl Schwartzel",
           "reserve": "Ethan Fang",
           "using_reserve": false,
-          "score": 8,
+          "score": 4,
           "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
+          "missed_cut": false,
+          "status": "active",
           "position": ""
         }
       },
-      "rank": 6
+      "rank": 8
     },
     {
       "participant": "James McMaster",
@@ -562,80 +708,7 @@
           "position": ""
         }
       },
-      "rank": 7
-    },
-    {
-      "participant": "Neil McMaster",
-      "total": 13,
-      "tier_scores": {
-        "Tier 1": {
-          "golfer": "Jon Rahm",
-          "original_pick": "Jon Rahm",
-          "reserve": "Rory McIlroy",
-          "using_reserve": false,
-          "score": 4,
-          "raw_score": 4,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 2": {
-          "golfer": "Xander Schauffele",
-          "original_pick": "Xander Schauffele",
-          "reserve": "Tommy Fleetwood",
-          "using_reserve": false,
-          "score": -2,
-          "raw_score": -2,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 3": {
-          "golfer": "Patrick Reed",
-          "original_pick": "Patrick Reed",
-          "reserve": "Robert MacIntyre",
-          "using_reserve": false,
-          "score": -6,
-          "raw_score": -6,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 4": {
-          "golfer": "Si Woo Kim",
-          "original_pick": "Si Woo Kim",
-          "reserve": "Akshay Bhatia",
-          "using_reserve": false,
-          "score": 8,
-          "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        },
-        "Tier 5": {
-          "golfer": "Jacob Bridgeman",
-          "original_pick": "Jacob Bridgeman",
-          "reserve": "Aldrich Potgieter",
-          "using_reserve": false,
-          "score": 1,
-          "raw_score": 1,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 6": {
-          "golfer": "Charl Schwartzel",
-          "original_pick": "Charl Schwartzel",
-          "reserve": "Zach Johnson",
-          "using_reserve": false,
-          "score": 8,
-          "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        }
-      },
-      "rank": 8
+      "rank": 9
     },
     {
       "participant": "Angelo Voulgarellis",
@@ -705,79 +778,6 @@
           "raw_score": 0,
           "missed_cut": false,
           "status": "active",
-          "position": ""
-        }
-      },
-      "rank": 9
-    },
-    {
-      "participant": "Stephan Kemp",
-      "total": 13,
-      "tier_scores": {
-        "Tier 1": {
-          "golfer": "Scottie Scheffler",
-          "original_pick": "Scottie Scheffler",
-          "reserve": "Bryson DeChambeau",
-          "using_reserve": false,
-          "score": 0,
-          "raw_score": 0,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 2": {
-          "golfer": "Ludvig \u00c5berg",
-          "original_pick": "Ludvig Aberg",
-          "reserve": "Collin Morikawa",
-          "using_reserve": false,
-          "score": 0,
-          "raw_score": 0,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 3": {
-          "golfer": "Cameron Young",
-          "original_pick": "Cameron Young",
-          "reserve": "Chris Gotterup",
-          "using_reserve": false,
-          "score": -4,
-          "raw_score": -4,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 4": {
-          "golfer": "Si Woo Kim",
-          "original_pick": "Si Woo Kim",
-          "reserve": "Nicolai Hojgaard",
-          "using_reserve": false,
-          "score": 8,
-          "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        },
-        "Tier 5": {
-          "golfer": "Jacob Bridgeman",
-          "original_pick": "Jacob Bridgeman",
-          "reserve": "Carlos Ortiz",
-          "using_reserve": false,
-          "score": 1,
-          "raw_score": 1,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 6": {
-          "golfer": "Charl Schwartzel",
-          "original_pick": "Charl Schwartzel",
-          "reserve": "Ethan Fang",
-          "using_reserve": false,
-          "score": 8,
-          "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
           "position": ""
         }
       },
@@ -930,6 +930,79 @@
       "rank": 12
     },
     {
+      "participant": "Helgardt Muller",
+      "total": 15,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "Bryson DeChambeau",
+          "original_pick": "Bryson DeChambeau",
+          "reserve": "Scottie Scheffler",
+          "using_reserve": false,
+          "score": 12,
+          "raw_score": 6,
+          "missed_cut": true,
+          "status": "missed_cut",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "Ludvig \u00c5berg",
+          "original_pick": "Ludvig Aberg",
+          "reserve": "Tommy Fleetwood",
+          "using_reserve": false,
+          "score": 0,
+          "raw_score": 0,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "Cameron Young",
+          "original_pick": "Cameron Young",
+          "reserve": "Patrick Reed",
+          "using_reserve": false,
+          "score": -4,
+          "raw_score": -4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "Adam Scott",
+          "original_pick": "Adam Scott",
+          "reserve": "Nicolai Hojgaard",
+          "using_reserve": false,
+          "score": 2,
+          "raw_score": 2,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "Jacob Bridgeman",
+          "original_pick": "Jacob Bridgeman",
+          "reserve": "Carlos Ortiz",
+          "using_reserve": false,
+          "score": 1,
+          "raw_score": 1,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "Charl Schwartzel",
+          "original_pick": "Charl Schwartzel",
+          "reserve": "Zach Johnson",
+          "using_reserve": false,
+          "score": 4,
+          "raw_score": 4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        }
+      },
+      "rank": 13
+    },
+    {
       "participant": "Graeme Peace",
       "total": 16,
       "tier_scores": {
@@ -1000,7 +1073,7 @@
           "position": ""
         }
       },
-      "rank": 13
+      "rank": 14
     },
     {
       "participant": "Breyten Meyer",
@@ -1073,7 +1146,7 @@
           "position": ""
         }
       },
-      "rank": 14
+      "rank": 15
     },
     {
       "participant": "Stephanus Raubenheimer",
@@ -1146,7 +1219,7 @@
           "position": ""
         }
       },
-      "rank": 15
+      "rank": 16
     },
     {
       "participant": "Gerard MacLachlan",
@@ -1219,84 +1292,11 @@
           "position": ""
         }
       },
-      "rank": 16
-    },
-    {
-      "participant": "Helgardt Muller",
-      "total": 19,
-      "tier_scores": {
-        "Tier 1": {
-          "golfer": "Bryson DeChambeau",
-          "original_pick": "Bryson DeChambeau",
-          "reserve": "Scottie Scheffler",
-          "using_reserve": false,
-          "score": 12,
-          "raw_score": 6,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        },
-        "Tier 2": {
-          "golfer": "Ludvig \u00c5berg",
-          "original_pick": "Ludvig Aberg",
-          "reserve": "Tommy Fleetwood",
-          "using_reserve": false,
-          "score": 0,
-          "raw_score": 0,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 3": {
-          "golfer": "Cameron Young",
-          "original_pick": "Cameron Young",
-          "reserve": "Patrick Reed",
-          "using_reserve": false,
-          "score": -4,
-          "raw_score": -4,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 4": {
-          "golfer": "Adam Scott",
-          "original_pick": "Adam Scott",
-          "reserve": "Nicolai Hojgaard",
-          "using_reserve": false,
-          "score": 2,
-          "raw_score": 2,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 5": {
-          "golfer": "Jacob Bridgeman",
-          "original_pick": "Jacob Bridgeman",
-          "reserve": "Carlos Ortiz",
-          "using_reserve": false,
-          "score": 1,
-          "raw_score": 1,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 6": {
-          "golfer": "Charl Schwartzel",
-          "original_pick": "Charl Schwartzel",
-          "reserve": "Zach Johnson",
-          "using_reserve": false,
-          "score": 8,
-          "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        }
-      },
       "rank": 17
     },
     {
       "participant": "Ferdie Louw",
-      "total": 22,
+      "total": 18,
       "tier_scores": {
         "Tier 1": {
           "golfer": "Scottie Scheffler",
@@ -1325,10 +1325,10 @@
           "original_pick": "Corey Conners",
           "reserve": "Hideki Matsuyama",
           "using_reserve": false,
-          "score": 8,
+          "score": 4,
           "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
+          "missed_cut": false,
+          "status": "active",
           "position": ""
         },
         "Tier 4": {
@@ -1366,6 +1366,79 @@
         }
       },
       "rank": 18
+    },
+    {
+      "participant": "Zander Bronn",
+      "total": 20,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "Bryson DeChambeau",
+          "original_pick": "Bryson DeChambeau",
+          "reserve": "Scottie Scheffler",
+          "using_reserve": false,
+          "score": 12,
+          "raw_score": 6,
+          "missed_cut": true,
+          "status": "missed_cut",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "Justin Rose",
+          "original_pick": "Justin Rose",
+          "reserve": "Ludvig Aberg",
+          "using_reserve": false,
+          "score": -5,
+          "raw_score": -5,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "Cameron Young",
+          "original_pick": "Cameron Young",
+          "reserve": "Hideki Matsuyama",
+          "using_reserve": false,
+          "score": -4,
+          "raw_score": -4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "Akshay Bhatia",
+          "original_pick": "Akshay Bhatia",
+          "reserve": "Nicolai Hojgaard",
+          "using_reserve": false,
+          "score": 12,
+          "raw_score": 6,
+          "missed_cut": true,
+          "status": "missed_cut",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "Jacob Bridgeman",
+          "original_pick": "Jacob Bridgeman",
+          "reserve": "Maverick McNealy",
+          "using_reserve": false,
+          "score": 1,
+          "raw_score": 1,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "Charl Schwartzel",
+          "original_pick": "Charl Schwartzel",
+          "reserve": "Ethan Fang",
+          "using_reserve": false,
+          "score": 4,
+          "raw_score": 4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        }
+      },
+      "rank": 19
     },
     {
       "participant": "Kash Vazirani",
@@ -1433,79 +1506,6 @@
           "using_reserve": false,
           "score": 10,
           "raw_score": 5,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        }
-      },
-      "rank": 19
-    },
-    {
-      "participant": "Zander Bronn",
-      "total": 24,
-      "tier_scores": {
-        "Tier 1": {
-          "golfer": "Bryson DeChambeau",
-          "original_pick": "Bryson DeChambeau",
-          "reserve": "Scottie Scheffler",
-          "using_reserve": false,
-          "score": 12,
-          "raw_score": 6,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        },
-        "Tier 2": {
-          "golfer": "Justin Rose",
-          "original_pick": "Justin Rose",
-          "reserve": "Ludvig Aberg",
-          "using_reserve": false,
-          "score": -5,
-          "raw_score": -5,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 3": {
-          "golfer": "Cameron Young",
-          "original_pick": "Cameron Young",
-          "reserve": "Hideki Matsuyama",
-          "using_reserve": false,
-          "score": -4,
-          "raw_score": -4,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 4": {
-          "golfer": "Akshay Bhatia",
-          "original_pick": "Akshay Bhatia",
-          "reserve": "Nicolai Hojgaard",
-          "using_reserve": false,
-          "score": 12,
-          "raw_score": 6,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        },
-        "Tier 5": {
-          "golfer": "Jacob Bridgeman",
-          "original_pick": "Jacob Bridgeman",
-          "reserve": "Maverick McNealy",
-          "using_reserve": false,
-          "score": 1,
-          "raw_score": 1,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 6": {
-          "golfer": "Charl Schwartzel",
-          "original_pick": "Charl Schwartzel",
-          "reserve": "Ethan Fang",
-          "using_reserve": false,
-          "score": 8,
-          "raw_score": 4,
           "missed_cut": true,
           "status": "missed_cut",
           "position": ""
@@ -1660,6 +1660,79 @@
       "rank": 22
     },
     {
+      "participant": "Pierre Goldie",
+      "total": 26,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "Scottie Scheffler",
+          "original_pick": "Scottie Scheffler",
+          "reserve": "Bryson DeChambeau",
+          "using_reserve": false,
+          "score": 0,
+          "raw_score": 0,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "Ludvig \u00c5berg",
+          "original_pick": "Ludvig Aberg",
+          "reserve": "Xander Schauffele",
+          "using_reserve": false,
+          "score": 0,
+          "raw_score": 0,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "Matt Fitzpatrick",
+          "original_pick": "Matt Fitzpatrick",
+          "reserve": "Cameron Young",
+          "using_reserve": false,
+          "score": -1,
+          "raw_score": -1,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "Min Woo Lee",
+          "original_pick": "Min Woo Lee",
+          "reserve": "Jordan Spieth",
+          "using_reserve": false,
+          "score": 22,
+          "raw_score": 11,
+          "missed_cut": true,
+          "status": "missed_cut",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "Jacob Bridgeman",
+          "original_pick": "Jacob Bridgeman",
+          "reserve": "Casey Jarvis",
+          "using_reserve": false,
+          "score": 1,
+          "raw_score": 1,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "Charl Schwartzel",
+          "original_pick": "Charl Schwartzel",
+          "reserve": "Bubba Watson",
+          "using_reserve": false,
+          "score": 4,
+          "raw_score": 4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        }
+      },
+      "rank": 23
+    },
+    {
       "participant": "Gerjo Van Der Merwe",
       "total": 27,
       "tier_scores": {
@@ -1730,7 +1803,7 @@
           "position": ""
         }
       },
-      "rank": 23
+      "rank": 24
     },
     {
       "participant": "George Self",
@@ -1803,11 +1876,11 @@
           "position": ""
         }
       },
-      "rank": 24
+      "rank": 25
     },
     {
-      "participant": "Pierre Goldie",
-      "total": 30,
+      "participant": "Adriaan Boswell",
+      "total": 28,
       "tier_scores": {
         "Tier 1": {
           "golfer": "Scottie Scheffler",
@@ -1823,7 +1896,7 @@
         "Tier 2": {
           "golfer": "Ludvig \u00c5berg",
           "original_pick": "Ludvig Aberg",
-          "reserve": "Xander Schauffele",
+          "reserve": "Tommy Fleetwood",
           "using_reserve": false,
           "score": 0,
           "raw_score": 0,
@@ -1832,34 +1905,107 @@
           "position": ""
         },
         "Tier 3": {
-          "golfer": "Matt Fitzpatrick",
-          "original_pick": "Matt Fitzpatrick",
-          "reserve": "Cameron Young",
+          "golfer": "Cameron Young",
+          "original_pick": "Cameron Young",
+          "reserve": "Hideki Matsuyama",
           "using_reserve": false,
-          "score": -1,
-          "raw_score": -1,
+          "score": -4,
+          "raw_score": -4,
           "missed_cut": false,
           "status": "active",
           "position": ""
         },
         "Tier 4": {
-          "golfer": "Min Woo Lee",
-          "original_pick": "Min Woo Lee",
-          "reserve": "Jordan Spieth",
+          "golfer": "Max Homa",
+          "original_pick": "Max Homa",
+          "reserve": "Min Woo Lee",
           "using_reserve": false,
-          "score": 22,
-          "raw_score": 11,
+          "score": -2,
+          "raw_score": -2,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "Aldrich Potgieter",
+          "original_pick": "Aldrich Potgieter",
+          "reserve": "Carlos Ortiz",
+          "using_reserve": false,
+          "score": 30,
+          "raw_score": 15,
+          "missed_cut": true,
+          "status": "missed_cut",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "Charl Schwartzel",
+          "original_pick": "Charl Schwartzel",
+          "reserve": "Jose Maria Olazabal",
+          "using_reserve": false,
+          "score": 4,
+          "raw_score": 4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        }
+      },
+      "rank": 26
+    },
+    {
+      "participant": "Quintin Van Jaarsveldt",
+      "total": 29,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "Bryson DeChambeau",
+          "original_pick": "Bryson DeChambeau",
+          "reserve": "Scottie Scheffler",
+          "using_reserve": false,
+          "score": 12,
+          "raw_score": 6,
+          "missed_cut": true,
+          "status": "missed_cut",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "Xander Schauffele",
+          "original_pick": "Xander Schauffele",
+          "reserve": "Ludvig Aberg",
+          "using_reserve": false,
+          "score": -2,
+          "raw_score": -2,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "Hideki Matsuyama",
+          "original_pick": "Hideki Matsuyama",
+          "reserve": "Cameron Young",
+          "using_reserve": false,
+          "score": -2,
+          "raw_score": -2,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "Cameron Smith",
+          "original_pick": "Cameron Smith",
+          "reserve": "Sergio Garcia",
+          "using_reserve": false,
+          "score": 14,
+          "raw_score": 7,
           "missed_cut": true,
           "status": "missed_cut",
           "position": ""
         },
         "Tier 5": {
-          "golfer": "Jacob Bridgeman",
-          "original_pick": "Jacob Bridgeman",
-          "reserve": "Casey Jarvis",
+          "golfer": "Maverick McNealy",
+          "original_pick": "Maverick McNealy",
+          "reserve": "Haotong Li",
           "using_reserve": false,
-          "score": 1,
-          "raw_score": 1,
+          "score": 3,
+          "raw_score": 3,
           "missed_cut": false,
           "status": "active",
           "position": ""
@@ -1867,16 +2013,16 @@
         "Tier 6": {
           "golfer": "Charl Schwartzel",
           "original_pick": "Charl Schwartzel",
-          "reserve": "Bubba Watson",
+          "reserve": "Vijay Singh",
           "using_reserve": false,
-          "score": 8,
+          "score": 4,
           "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
+          "missed_cut": false,
+          "status": "active",
           "position": ""
         }
       },
-      "rank": 25
+      "rank": 27
     },
     {
       "participant": "Clay Crosby",
@@ -1949,80 +2095,7 @@
           "position": ""
         }
       },
-      "rank": 26
-    },
-    {
-      "participant": "Adriaan Boswell",
-      "total": 32,
-      "tier_scores": {
-        "Tier 1": {
-          "golfer": "Scottie Scheffler",
-          "original_pick": "Scottie Scheffler",
-          "reserve": "Bryson DeChambeau",
-          "using_reserve": false,
-          "score": 0,
-          "raw_score": 0,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 2": {
-          "golfer": "Ludvig \u00c5berg",
-          "original_pick": "Ludvig Aberg",
-          "reserve": "Tommy Fleetwood",
-          "using_reserve": false,
-          "score": 0,
-          "raw_score": 0,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 3": {
-          "golfer": "Cameron Young",
-          "original_pick": "Cameron Young",
-          "reserve": "Hideki Matsuyama",
-          "using_reserve": false,
-          "score": -4,
-          "raw_score": -4,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 4": {
-          "golfer": "Max Homa",
-          "original_pick": "Max Homa",
-          "reserve": "Min Woo Lee",
-          "using_reserve": false,
-          "score": -2,
-          "raw_score": -2,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 5": {
-          "golfer": "Aldrich Potgieter",
-          "original_pick": "Aldrich Potgieter",
-          "reserve": "Carlos Ortiz",
-          "using_reserve": false,
-          "score": 30,
-          "raw_score": 15,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        },
-        "Tier 6": {
-          "golfer": "Charl Schwartzel",
-          "original_pick": "Charl Schwartzel",
-          "reserve": "Jose Maria Olazabal",
-          "using_reserve": false,
-          "score": 8,
-          "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        }
-      },
-      "rank": 27
+      "rank": 28
     },
     {
       "participant": "Ryan Echausse",
@@ -2090,79 +2163,6 @@
           "using_reserve": false,
           "score": 12,
           "raw_score": 6,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        }
-      },
-      "rank": 28
-    },
-    {
-      "participant": "Quintin Van Jaarsveldt",
-      "total": 33,
-      "tier_scores": {
-        "Tier 1": {
-          "golfer": "Bryson DeChambeau",
-          "original_pick": "Bryson DeChambeau",
-          "reserve": "Scottie Scheffler",
-          "using_reserve": false,
-          "score": 12,
-          "raw_score": 6,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        },
-        "Tier 2": {
-          "golfer": "Xander Schauffele",
-          "original_pick": "Xander Schauffele",
-          "reserve": "Ludvig Aberg",
-          "using_reserve": false,
-          "score": -2,
-          "raw_score": -2,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 3": {
-          "golfer": "Hideki Matsuyama",
-          "original_pick": "Hideki Matsuyama",
-          "reserve": "Cameron Young",
-          "using_reserve": false,
-          "score": -2,
-          "raw_score": -2,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 4": {
-          "golfer": "Cameron Smith",
-          "original_pick": "Cameron Smith",
-          "reserve": "Sergio Garcia",
-          "using_reserve": false,
-          "score": 14,
-          "raw_score": 7,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        },
-        "Tier 5": {
-          "golfer": "Maverick McNealy",
-          "original_pick": "Maverick McNealy",
-          "reserve": "Haotong Li",
-          "using_reserve": false,
-          "score": 3,
-          "raw_score": 3,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 6": {
-          "golfer": "Charl Schwartzel",
-          "original_pick": "Charl Schwartzel",
-          "reserve": "Vijay Singh",
-          "using_reserve": false,
-          "score": 8,
-          "raw_score": 4,
           "missed_cut": true,
           "status": "missed_cut",
           "position": ""
@@ -2244,6 +2244,79 @@
       "rank": 30
     },
     {
+      "participant": "Roan Roode",
+      "total": 33,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "Bryson DeChambeau",
+          "original_pick": "Bryson DeChambeau",
+          "reserve": "Rory McIlroy",
+          "using_reserve": false,
+          "score": 12,
+          "raw_score": 6,
+          "missed_cut": true,
+          "status": "missed_cut",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "Xander Schauffele",
+          "original_pick": "Xander Schauffele",
+          "reserve": "Ludvig Aberg",
+          "using_reserve": false,
+          "score": -2,
+          "raw_score": -2,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "Cameron Young",
+          "original_pick": "Cameron Young",
+          "reserve": "Matt Fitzpatrick",
+          "using_reserve": false,
+          "score": -4,
+          "raw_score": -4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "Min Woo Lee",
+          "original_pick": "Min Woo Lee",
+          "reserve": "Jordan Spieth",
+          "using_reserve": false,
+          "score": 22,
+          "raw_score": 11,
+          "missed_cut": true,
+          "status": "missed_cut",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "Jacob Bridgeman",
+          "original_pick": "Jacob Bridgeman",
+          "reserve": "Maverick McNealy",
+          "using_reserve": false,
+          "score": 1,
+          "raw_score": 1,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "Charl Schwartzel",
+          "original_pick": "Charl Schwartzel",
+          "reserve": "Zach Johnson",
+          "using_reserve": false,
+          "score": 4,
+          "raw_score": 4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        }
+      },
+      "rank": 31
+    },
+    {
       "participant": "Morne Smit",
       "total": 36,
       "tier_scores": {
@@ -2314,7 +2387,7 @@
           "position": ""
         }
       },
-      "rank": 31
+      "rank": 32
     },
     {
       "participant": "Ivan Van Vuren",
@@ -2387,7 +2460,7 @@
           "position": ""
         }
       },
-      "rank": 32
+      "rank": 33
     },
     {
       "participant": "Philip Hearle",
@@ -2460,16 +2533,16 @@
           "position": ""
         }
       },
-      "rank": 33
+      "rank": 34
     },
     {
-      "participant": "Roan Roode",
-      "total": 37,
+      "participant": "Gerard Beyers",
+      "total": 38,
       "tier_scores": {
         "Tier 1": {
           "golfer": "Bryson DeChambeau",
           "original_pick": "Bryson DeChambeau",
-          "reserve": "Rory McIlroy",
+          "reserve": "Jon Rahm",
           "using_reserve": false,
           "score": 12,
           "raw_score": 6,
@@ -2480,7 +2553,7 @@
         "Tier 2": {
           "golfer": "Xander Schauffele",
           "original_pick": "Xander Schauffele",
-          "reserve": "Ludvig Aberg",
+          "reserve": "Tommy Fleetwood",
           "using_reserve": false,
           "score": -2,
           "raw_score": -2,
@@ -2489,12 +2562,12 @@
           "position": ""
         },
         "Tier 3": {
-          "golfer": "Cameron Young",
-          "original_pick": "Cameron Young",
-          "reserve": "Matt Fitzpatrick",
+          "golfer": "Matt Fitzpatrick",
+          "original_pick": "Matt Fitzpatrick",
+          "reserve": "Cameron Young",
           "using_reserve": false,
-          "score": -4,
-          "raw_score": -4,
+          "score": -1,
+          "raw_score": -1,
           "missed_cut": false,
           "status": "active",
           "position": ""
@@ -2502,7 +2575,7 @@
         "Tier 4": {
           "golfer": "Min Woo Lee",
           "original_pick": "Min Woo Lee",
-          "reserve": "Jordan Spieth",
+          "reserve": "Adam Scott",
           "using_reserve": false,
           "score": 22,
           "raw_score": 11,
@@ -2511,12 +2584,12 @@
           "position": ""
         },
         "Tier 5": {
-          "golfer": "Jacob Bridgeman",
-          "original_pick": "Jacob Bridgeman",
-          "reserve": "Maverick McNealy",
+          "golfer": "Maverick McNealy",
+          "original_pick": "Maverick McNealy",
+          "reserve": "Andrew Novak",
           "using_reserve": false,
-          "score": 1,
-          "raw_score": 1,
+          "score": 3,
+          "raw_score": 3,
           "missed_cut": false,
           "status": "active",
           "position": ""
@@ -2524,16 +2597,16 @@
         "Tier 6": {
           "golfer": "Charl Schwartzel",
           "original_pick": "Charl Schwartzel",
-          "reserve": "Zach Johnson",
+          "reserve": "Brian Campbell",
           "using_reserve": false,
-          "score": 8,
+          "score": 4,
           "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
+          "missed_cut": false,
+          "status": "active",
           "position": ""
         }
       },
-      "rank": 34
+      "rank": 35
     },
     {
       "participant": "Clinton Marais",
@@ -2601,79 +2674,6 @@
           "using_reserve": false,
           "score": 12,
           "raw_score": 6,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        }
-      },
-      "rank": 35
-    },
-    {
-      "participant": "Gerard Beyers",
-      "total": 42,
-      "tier_scores": {
-        "Tier 1": {
-          "golfer": "Bryson DeChambeau",
-          "original_pick": "Bryson DeChambeau",
-          "reserve": "Jon Rahm",
-          "using_reserve": false,
-          "score": 12,
-          "raw_score": 6,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        },
-        "Tier 2": {
-          "golfer": "Xander Schauffele",
-          "original_pick": "Xander Schauffele",
-          "reserve": "Tommy Fleetwood",
-          "using_reserve": false,
-          "score": -2,
-          "raw_score": -2,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 3": {
-          "golfer": "Matt Fitzpatrick",
-          "original_pick": "Matt Fitzpatrick",
-          "reserve": "Cameron Young",
-          "using_reserve": false,
-          "score": -1,
-          "raw_score": -1,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 4": {
-          "golfer": "Min Woo Lee",
-          "original_pick": "Min Woo Lee",
-          "reserve": "Adam Scott",
-          "using_reserve": false,
-          "score": 22,
-          "raw_score": 11,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        },
-        "Tier 5": {
-          "golfer": "Maverick McNealy",
-          "original_pick": "Maverick McNealy",
-          "reserve": "Andrew Novak",
-          "using_reserve": false,
-          "score": 3,
-          "raw_score": 3,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 6": {
-          "golfer": "Charl Schwartzel",
-          "original_pick": "Charl Schwartzel",
-          "reserve": "Brian Campbell",
-          "using_reserve": false,
-          "score": 8,
-          "raw_score": 4,
           "missed_cut": true,
           "status": "missed_cut",
           "position": ""
@@ -2755,6 +2755,79 @@
       "rank": 37
     },
     {
+      "participant": "Keegan Foss",
+      "total": 48,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "Bryson DeChambeau",
+          "original_pick": "Bryson DeChambeau",
+          "reserve": "Jon Rahm",
+          "using_reserve": false,
+          "score": 12,
+          "raw_score": 6,
+          "missed_cut": true,
+          "status": "missed_cut",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "Justin Rose",
+          "original_pick": "Justin Rose",
+          "reserve": "Ludvig Aberg",
+          "using_reserve": false,
+          "score": -5,
+          "raw_score": -5,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "Robert MacIntyre",
+          "original_pick": "Robert MacIntyre",
+          "reserve": "Sepp Straka",
+          "using_reserve": false,
+          "score": 14,
+          "raw_score": 7,
+          "missed_cut": true,
+          "status": "missed_cut",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "Sungjae Im",
+          "original_pick": "Sungjae Im",
+          "reserve": "Adam Scott",
+          "using_reserve": false,
+          "score": 1,
+          "raw_score": 1,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "Carlos Ortiz",
+          "original_pick": "Carlos Ortiz",
+          "reserve": "Danny Willett",
+          "using_reserve": false,
+          "score": 22,
+          "raw_score": 11,
+          "missed_cut": true,
+          "status": "missed_cut",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "Charl Schwartzel",
+          "original_pick": "Charl Schwartzel",
+          "reserve": "Bubba Watson",
+          "using_reserve": false,
+          "score": 4,
+          "raw_score": 4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        }
+      },
+      "rank": 38
+    },
+    {
       "participant": "Chris Wicks",
       "total": 49,
       "tier_scores": {
@@ -2825,7 +2898,80 @@
           "position": ""
         }
       },
-      "rank": 38
+      "rank": 39
+    },
+    {
+      "participant": "Russel Raubenheimer",
+      "total": 50,
+      "tier_scores": {
+        "Tier 1": {
+          "golfer": "Jon Rahm",
+          "original_pick": "Jon Rahm",
+          "reserve": "Scottie Scheffler",
+          "using_reserve": false,
+          "score": 4,
+          "raw_score": 4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 2": {
+          "golfer": "Ludvig \u00c5berg",
+          "original_pick": "Ludvig Aberg",
+          "reserve": "Justin Rose",
+          "using_reserve": false,
+          "score": 0,
+          "raw_score": 0,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 3": {
+          "golfer": "Russell Henley",
+          "original_pick": "Russell Henley",
+          "reserve": "Matt Fitzpatrick",
+          "using_reserve": false,
+          "score": 0,
+          "raw_score": 0,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        },
+        "Tier 4": {
+          "golfer": "Akshay Bhatia",
+          "original_pick": "Akshay Bhatia",
+          "reserve": "Jason Day",
+          "using_reserve": false,
+          "score": 12,
+          "raw_score": 6,
+          "missed_cut": true,
+          "status": "missed_cut",
+          "position": ""
+        },
+        "Tier 5": {
+          "golfer": "Aldrich Potgieter",
+          "original_pick": "Aldrich Potgieter",
+          "reserve": "Sam Stevens",
+          "using_reserve": false,
+          "score": 30,
+          "raw_score": 15,
+          "missed_cut": true,
+          "status": "missed_cut",
+          "position": ""
+        },
+        "Tier 6": {
+          "golfer": "Charl Schwartzel",
+          "original_pick": "Charl Schwartzel",
+          "reserve": "Bubba Watson",
+          "using_reserve": false,
+          "score": 4,
+          "raw_score": 4,
+          "missed_cut": false,
+          "status": "active",
+          "position": ""
+        }
+      },
+      "rank": 40
     },
     {
       "participant": "Reynard Van der Nest",
@@ -2898,16 +3044,16 @@
           "position": ""
         }
       },
-      "rank": 39
+      "rank": 41
     },
     {
-      "participant": "Keegan Foss",
-      "total": 52,
+      "participant": "Henno Badenhorst",
+      "total": 53,
       "tier_scores": {
         "Tier 1": {
           "golfer": "Bryson DeChambeau",
           "original_pick": "Bryson DeChambeau",
-          "reserve": "Jon Rahm",
+          "reserve": "Rory McIlroy",
           "using_reserve": false,
           "score": 12,
           "raw_score": 6,
@@ -2916,96 +3062,23 @@
           "position": ""
         },
         "Tier 2": {
-          "golfer": "Justin Rose",
-          "original_pick": "Justin Rose",
+          "golfer": "Xander Schauffele",
+          "original_pick": "Xander Schauffele",
           "reserve": "Ludvig Aberg",
           "using_reserve": false,
-          "score": -5,
-          "raw_score": -5,
+          "score": -2,
+          "raw_score": -2,
           "missed_cut": false,
           "status": "active",
           "position": ""
         },
         "Tier 3": {
-          "golfer": "Robert MacIntyre",
-          "original_pick": "Robert MacIntyre",
-          "reserve": "Sepp Straka",
+          "golfer": "Brooks Koepka",
+          "original_pick": "Brooks Koepka",
+          "reserve": "Tyrrell Hatton",
           "using_reserve": false,
-          "score": 14,
-          "raw_score": 7,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        },
-        "Tier 4": {
-          "golfer": "Sungjae Im",
-          "original_pick": "Sungjae Im",
-          "reserve": "Adam Scott",
-          "using_reserve": false,
-          "score": 1,
-          "raw_score": 1,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 5": {
-          "golfer": "Carlos Ortiz",
-          "original_pick": "Carlos Ortiz",
-          "reserve": "Danny Willett",
-          "using_reserve": false,
-          "score": 22,
-          "raw_score": 11,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        },
-        "Tier 6": {
-          "golfer": "Charl Schwartzel",
-          "original_pick": "Charl Schwartzel",
-          "reserve": "Bubba Watson",
-          "using_reserve": false,
-          "score": 8,
-          "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        }
-      },
-      "rank": 40
-    },
-    {
-      "participant": "Russel Raubenheimer",
-      "total": 54,
-      "tier_scores": {
-        "Tier 1": {
-          "golfer": "Jon Rahm",
-          "original_pick": "Jon Rahm",
-          "reserve": "Scottie Scheffler",
-          "using_reserve": false,
-          "score": 4,
-          "raw_score": 4,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 2": {
-          "golfer": "Ludvig \u00c5berg",
-          "original_pick": "Ludvig Aberg",
-          "reserve": "Justin Rose",
-          "using_reserve": false,
-          "score": 0,
-          "raw_score": 0,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 3": {
-          "golfer": "Russell Henley",
-          "original_pick": "Russell Henley",
-          "reserve": "Matt Fitzpatrick",
-          "using_reserve": false,
-          "score": 0,
-          "raw_score": 0,
+          "score": -3,
+          "raw_score": -3,
           "missed_cut": false,
           "status": "active",
           "position": ""
@@ -3013,7 +3086,7 @@
         "Tier 4": {
           "golfer": "Akshay Bhatia",
           "original_pick": "Akshay Bhatia",
-          "reserve": "Jason Day",
+          "reserve": "Min Woo Lee",
           "using_reserve": false,
           "score": 12,
           "raw_score": 6,
@@ -3024,7 +3097,7 @@
         "Tier 5": {
           "golfer": "Aldrich Potgieter",
           "original_pick": "Aldrich Potgieter",
-          "reserve": "Sam Stevens",
+          "reserve": "Danny Willett",
           "using_reserve": false,
           "score": 30,
           "raw_score": 15,
@@ -3035,16 +3108,16 @@
         "Tier 6": {
           "golfer": "Charl Schwartzel",
           "original_pick": "Charl Schwartzel",
-          "reserve": "Bubba Watson",
+          "reserve": "Mike Weir",
           "using_reserve": false,
-          "score": 8,
+          "score": 4,
           "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
+          "missed_cut": false,
+          "status": "active",
           "position": ""
         }
       },
-      "rank": 41
+      "rank": 42
     },
     {
       "participant": "Dean Van Vuren",
@@ -3117,27 +3190,27 @@
           "position": ""
         }
       },
-      "rank": 42
+      "rank": 43
     },
     {
-      "participant": "Henno Badenhorst",
-      "total": 57,
+      "participant": "Ashley Hertz",
+      "total": 60,
       "tier_scores": {
         "Tier 1": {
-          "golfer": "Bryson DeChambeau",
-          "original_pick": "Bryson DeChambeau",
+          "golfer": "Scottie Scheffler",
+          "original_pick": "Scottie Scheffler",
           "reserve": "Rory McIlroy",
           "using_reserve": false,
-          "score": 12,
-          "raw_score": 6,
-          "missed_cut": true,
-          "status": "missed_cut",
+          "score": 0,
+          "raw_score": 0,
+          "missed_cut": false,
+          "status": "active",
           "position": ""
         },
         "Tier 2": {
           "golfer": "Xander Schauffele",
           "original_pick": "Xander Schauffele",
-          "reserve": "Ludvig Aberg",
+          "reserve": "Tommy Fleetwood",
           "using_reserve": false,
           "score": -2,
           "raw_score": -2,
@@ -3146,34 +3219,34 @@
           "position": ""
         },
         "Tier 3": {
-          "golfer": "Brooks Koepka",
-          "original_pick": "Brooks Koepka",
-          "reserve": "Tyrrell Hatton",
+          "golfer": "Patrick Cantlay",
+          "original_pick": "Patrick Cantlay",
+          "reserve": "Robert MacIntyre",
           "using_reserve": false,
-          "score": -3,
-          "raw_score": -3,
+          "score": 0,
+          "raw_score": 0,
           "missed_cut": false,
           "status": "active",
           "position": ""
         },
         "Tier 4": {
-          "golfer": "Akshay Bhatia",
-          "original_pick": "Akshay Bhatia",
-          "reserve": "Min Woo Lee",
+          "golfer": "Min Woo Lee",
+          "original_pick": "Min Woo Lee",
+          "reserve": "Nicolai Hojgaard",
           "using_reserve": false,
-          "score": 12,
-          "raw_score": 6,
+          "score": 22,
+          "raw_score": 11,
           "missed_cut": true,
           "status": "missed_cut",
           "position": ""
         },
         "Tier 5": {
-          "golfer": "Aldrich Potgieter",
-          "original_pick": "Aldrich Potgieter",
-          "reserve": "Danny Willett",
+          "golfer": "Davis Riley",
+          "original_pick": "Davis Riley",
+          "reserve": "Aldrich Potgieter",
           "using_reserve": false,
-          "score": 30,
-          "raw_score": 15,
+          "score": 36,
+          "raw_score": 18,
           "missed_cut": true,
           "status": "missed_cut",
           "position": ""
@@ -3181,16 +3254,16 @@
         "Tier 6": {
           "golfer": "Charl Schwartzel",
           "original_pick": "Charl Schwartzel",
-          "reserve": "Mike Weir",
+          "reserve": "Bubba Watson",
           "using_reserve": false,
-          "score": 8,
+          "score": 4,
           "raw_score": 4,
-          "missed_cut": true,
-          "status": "missed_cut",
+          "missed_cut": false,
+          "status": "active",
           "position": ""
         }
       },
-      "rank": 43
+      "rank": 44
     },
     {
       "participant": "Stephen Raubenheimer",
@@ -3258,79 +3331,6 @@
           "using_reserve": false,
           "score": 10,
           "raw_score": 5,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        }
-      },
-      "rank": 44
-    },
-    {
-      "participant": "Ashley Hertz",
-      "total": 64,
-      "tier_scores": {
-        "Tier 1": {
-          "golfer": "Scottie Scheffler",
-          "original_pick": "Scottie Scheffler",
-          "reserve": "Rory McIlroy",
-          "using_reserve": false,
-          "score": 0,
-          "raw_score": 0,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 2": {
-          "golfer": "Xander Schauffele",
-          "original_pick": "Xander Schauffele",
-          "reserve": "Tommy Fleetwood",
-          "using_reserve": false,
-          "score": -2,
-          "raw_score": -2,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 3": {
-          "golfer": "Patrick Cantlay",
-          "original_pick": "Patrick Cantlay",
-          "reserve": "Robert MacIntyre",
-          "using_reserve": false,
-          "score": 0,
-          "raw_score": 0,
-          "missed_cut": false,
-          "status": "active",
-          "position": ""
-        },
-        "Tier 4": {
-          "golfer": "Min Woo Lee",
-          "original_pick": "Min Woo Lee",
-          "reserve": "Nicolai Hojgaard",
-          "using_reserve": false,
-          "score": 22,
-          "raw_score": 11,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        },
-        "Tier 5": {
-          "golfer": "Davis Riley",
-          "original_pick": "Davis Riley",
-          "reserve": "Aldrich Potgieter",
-          "using_reserve": false,
-          "score": 36,
-          "raw_score": 18,
-          "missed_cut": true,
-          "status": "missed_cut",
-          "position": ""
-        },
-        "Tier 6": {
-          "golfer": "Charl Schwartzel",
-          "original_pick": "Charl Schwartzel",
-          "reserve": "Bubba Watson",
-          "using_reserve": false,
-          "score": 8,
-          "raw_score": 4,
           "missed_cut": true,
           "status": "missed_cut",
           "position": ""
