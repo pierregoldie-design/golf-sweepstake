@@ -245,9 +245,7 @@ function renderTournament() {
   function getPickers(espnName) {
     const n = norm(espnName);
     if (pickerMap[n]) return pickerMap[n];
-    const last = n.split(' ').slice(-1)[0];
-    const key = Object.keys(pickerMap).find(k => k.split(' ').slice(-1)[0] === last);
-    return key ? pickerMap[key] : [];
+    return [];
   }
 
   // Sort golfers by score
