@@ -209,7 +209,7 @@ function renderTournament() {
       const name = c.athlete.displayName;
       const raw = c.score || 'E';
       let score = (raw === 'E' || raw === 'Even') ? 0 : (parseInt(raw) || 0);
-      var nm = name.toLowerCase(); if (score > 4 && nm !== 'corey conners' && nm !== 'si woo kim' && nm !== 'charl schwartzel' && nm !== 'kurt kitayama') score = score * 2;
+      var nm = name.toLowerCase(); if (score > 4 && nm !== 'corey conners' && nm !== 'si woo kim' && nm !== 'charl schwartzel' && nm !== 'kurt kitayama' && nm !== 'jon rahm' && nm !== 'gary woodland') score = score * 2;
       // Thru: count holes played in current round (R3 if exists, else R2, else R1)
       const currentRound = c.linescores?.filter(r => r.linescores?.length > 0).slice(-1)[0];
       const holesPlayed = currentRound?.linescores?.length || 0;
