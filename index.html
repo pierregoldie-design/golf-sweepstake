@@ -327,10 +327,14 @@ function renderLeaderboard() {
   const results = scoresData.current_results || [];
   const ph = scoresData.players_results || {};
 
+  const mh = {};
+  (scoresData.masters_results || []).forEach(r => { mh[r.participant] = r.total; });
+
   const combined = results.map(p => {
     const ps = ph[p.participant] ?? 0;
-    const ms = p.total || 0;
-    return { name: p.participant, players: ps, masters: ms, total: ps + ms };
+    const ms = mh[p.participant] ?? 0;
+    const pga = p.total || 0;
+    return { name: p.participant, players: ps, masters: ms, pga: pga, total: ps + ms + pga };
   }).sort((a, b) => a.total - b.total);
 
   const rows = combined.map((p, i) => {
@@ -339,7 +343,7 @@ function renderLeaderboard() {
       <td style="color:var(--cream);font-weight:500">${p.name}</td>
       <td style="text-align:right">${fmtScore(p.players)}</td>
       <td style="text-align:right">${fmtScore(p.masters)}</td>
-      <td style="text-align:right;color:var(--text-dim)">—</td>
+      <td style="text-align:right">${fmtScore(p.pga)}</td>
       <td style="text-align:right;color:var(--text-dim)">—</td>
       <td style="text-align:right;color:var(--text-dim)">—</td>
       <td style="text-align:right">${fmtScore(p.total)}</td>
