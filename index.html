@@ -209,7 +209,7 @@ function renderTournament() {
       const name = c.athlete.displayName;
       const raw = c.score || 'E';
       let score = (raw === 'E' || raw === 'Even') ? 0 : (parseInt(raw) || 0);
-      var nm = name.toLowerCase(); if (score > 4 && nm !== 'corey conners' && nm !== 'si woo kim' && nm !== 'charl schwartzel' && nm !== 'kurt kitayama' && nm !== 'jon rahm' && nm !== 'gary woodland') score = score * 2;
+      const isCut = (c.linescores || []).length < 4; if (isCut) score = score * 2;
       // Thru: count holes played in current round (R3 if exists, else R2, else R1)
       const currentRound = c.linescores?.filter(r => r.linescores?.length > 0).slice(-1)[0];
       const holesPlayed = currentRound?.linescores?.length || 0;
@@ -331,11 +331,17 @@ function renderLeaderboard() {
   const mh = {};
   (scoresData.masters_results || []).forEach(r => { mh[r.participant] = r.total; });
 
+  const gh = {};
+  (scoresData.pga_results || []).forEach(r => { gh[r.participant] = r.total; });
+  const uh = scoresData.usopen_results || {};
+
   const combined = results.map(p => {
     const ps = ph[p.participant] ?? 0;
     const ms = mh[p.participant] ?? 0;
-    const pga = p.total || 0;
-    return { name: p.participant, players: ps, masters: ms, pga: pga, total: ps + ms + pga };
+    const pga = gh[p.participant] ?? 0;
+    const uso = uh[p.participant] ?? 0;
+    const open = p.total || 0;
+    return { name: p.participant, players: ps, masters: ms, pga: pga, uso: uso, open: open, total: ps + ms + pga + uso + open };
   }).sort((a, b) => a.total - b.total);
 
   const rows = combined.map((p, i) => {
@@ -345,8 +351,8 @@ function renderLeaderboard() {
       <td style="text-align:right">${fmtScore(p.players)}</td>
       <td style="text-align:right">${fmtScore(p.masters)}</td>
       <td style="text-align:right">${fmtScore(p.pga)}</td>
-      <td style="text-align:right;color:var(--text-dim)">—</td>
-      <td style="text-align:right;color:var(--text-dim)">—</td>
+      <td style="text-align:right">${fmtScore(p.uso)}</td>
+      <td style="text-align:right">${fmtScore(p.open)}</td>
       <td style="text-align:right">${fmtScore(p.total)}</td>
     </tr>`;
   }).join('');
