@@ -206,17 +206,19 @@ function renderTournament() {
   if (liveData && liveData.events && liveData.events[0]) {
     const competitors = liveData.events[0].competitions[0].competitors || [];
     const maxLs = Math.max(0, ...competitors.map(x => (x.linescores || []).length));
+    const cutSet = new Set();
+    ((scoresData || {}).current_results || []).forEach(pp => Object.values(pp.tier_scores || {}).forEach(t => { if (t.missed_cut && t.golfer) cutSet.add(norm(t.golfer)); }));
     competitors.forEach(c => {
       const name = c.athlete.displayName;
       const raw = c.score || 'E';
       let score = (raw === 'E' || raw === 'Even') ? 0 : (parseInt(raw) || 0);
-      const isCut = maxLs >= 4 && (c.linescores || []).length < 4; if (isCut) score = score * 2;
+      const isCut = cutSet.has(norm(name)) || (maxLs >= 4 && (c.linescores || []).length < 4); if (isCut) score = score * 2;
       // Thru: count holes played in current round (R3 if exists, else R2, else R1)
       const currentRound = c.linescores?.filter(r => r.linescores?.length > 0).slice(-1)[0];
       const holesPlayed = currentRound?.linescores?.length || 0;
       const roundScore = currentRound?.displayValue || '';
       const thru = holesPlayed === 18 ? 'F' : (holesPlayed > 0 ? holesPlayed + (roundScore ? ' (' + roundScore + ')' : '') : '—');
-      const cut = maxLs >= 4 && (c.linescores || []).length < 4;
+      const cut = cutSet.has(norm(name)) || (maxLs >= 4 && (c.linescores || []).length < 4);
       liveScoreMap[norm(name)] = { name, score, thru, cut };
     });
   }
